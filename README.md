@@ -1,5 +1,9 @@
 # TakeMeter
 
+## Planned stretch work
+
+Before starting the stretch work, I plan to add a fourth label, `guide_or_solution`, for posts that provide actionable game-related steps or explanations. I will also run a second training experiment with learning rate changed from `2e-5` to `1e-5` while keeping the other settings fixed, and add 50 examples to the thinnest label while keeping every label at or below 70% of the dataset. I will report the measured effect of the second run and the final label counts below.
+
 > ### 👋 Start here
 >
 > **New to this repo? Read [RUNNING.md](RUNNING.md) first** — setup, the
@@ -39,6 +43,7 @@
 
 ## What This Does
 
+TakeMeter will classify English, game-related posts from the public Steam Discussions board. It distinguishes claims supported by reasons or checkable details, unsupported confident takes, requests for help, and actionable solutions. Posts about accounts, payments, age verification, and personal support issues are outside the sampling scope.
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
@@ -54,35 +59,51 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `supported_claim`
 
-**Definition:**
+**Definition:** A claim or argument that includes a stated reason, concrete example, or checkable detail in the post.
 
-**Example 1:**
+**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
 >
 
-**Example 2:**
+**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
 >
 
-### `label_two`
+### `unsupported_take`
 
-**Definition:**
+**Definition:** A confident evaluative or causal claim that offers no reason, concrete example, or checkable detail in the post.
 
-**Example 1:**
+**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
 >
 
-**Example 2:**
+**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+>
+
+### `help_request`
+
+**Definition:** A post whose main purpose is to ask for advice, an explanation, or troubleshooting help.
+
+**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+>
+
+**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+>
+
+### `guide_or_solution`
+
+**Definition:** A post whose main purpose is to give actionable steps or an explanation that answers a game-related question or solves a problem.
+
+**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+>
+
+**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
 >
 
 ### The hardest boundary
 
-**Which two labels:**
-
+**Which two labels:** `supported_claim` and `unsupported_take`
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
+I counted support only when a reason, concrete example, or checkable detail appeared in the post itself. Confidence or heated wording did not count as support. When the main purpose was to ask for help, I used `help_request`; when it was to provide actionable instructions or an explanation, I used `guide_or_solution`.
 
 ---
 

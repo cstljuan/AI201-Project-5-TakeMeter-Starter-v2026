@@ -5,6 +5,7 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+supported_claim: a claim or argument that includes a stated reason, concrete example, or checkable detail in the post
+unsupported_take: a confident evaluative or causal claim that offers no reason, concrete example, or checkable detail in the post
+help_request: a post whose main purpose is to ask for advice, an explanation, or troubleshooting help
+guide_or_solution: a post whose main purpose is to give actionable steps or an explanation that answers a game-related question or solves a problem
