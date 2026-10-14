@@ -63,47 +63,47 @@ TakeMeter will classify English, game-related posts from the public Steam Discus
 
 **Definition:** A claim or argument that includes a specific reason, concrete example, or checkable detail in the post. A restatement of the opinion does not count as support.
 
-**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 1:** A reply compares newer integrated graphics with older discrete graphics and asks for the laptop model. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c594069369071474102)
 >
 
-**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 2:** A commenter argues that upgrading is unnecessary while many older games remain available. [Source post](https://steamcommunity.com/discussions/forum/0/594069606514065373/#c594069606514158741)
 >
 
 ### `unsupported_take`
 
 **Definition:** A confident evaluative or causal claim that offers no specific reason, concrete example, or checkable detail in the post.
 
-**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 1:** A commenter says the PC version should arrive quickly without giving a reason. [Source post](https://steamcommunity.com/discussions/forum/0/594069880291049840/#c594069880291052285)
 >
 
-**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 2:** A commenter predicts a future graphics feature will be a game changer without support. [Source post](https://steamcommunity.com/discussions/forum/0/594069606514065373/#c594069606514152898)
 >
 
 ### `help_request`
 
-**Definition:** A post whose main purpose is to ask for advice, an explanation, or troubleshooting help.
+**Definition:** A post whose main purpose is to ask for advice or an explanation, or to report an unresolved problem that needs troubleshooting.
 
-**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 1:** The original poster asks for a curated list of strategy games that run on laptops without dedicated graphics. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/)
 >
 
-**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 2:** A commenter asks whether every game can run on integrated graphics. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c572677904481144043)
 >
 
 ### `guide_or_solution`
 
 **Definition:** A post whose main purpose is to give actionable steps or an explanation that answers a game-related question or solves a problem.
 
-**Example 1:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 1:** A post gives ordered steps for installing SteamVR, pairing a Quest headset, launching a game, and troubleshooting connection issues. [Source post](https://steamcommunity.com/discussions/forum/0/694249410478104225/)
 >
 
-**Example 2:** To be selected from the posts read during taxonomy design, with a source link.
+**Example 2:** A reply recommends checking game requirements and performance videos to estimate whether a laptop can run a game. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c594069369071475463)
 >
 
 ### The hardest boundary
 
-**Which two labels:** `supported_claim` and `unsupported_take`
+**Which two labels:** `help_request` and `guide_or_solution`
 **The decision rule I used every time:**
-I counted support only when a specific reason, concrete example, or checkable detail appeared in the post itself; repeating the opinion in different words did not count. Confidence or heated wording did not count as support. When the main purpose was to ask for help, I used `help_request`; when it was to provide actionable instructions or an explanation, I used `guide_or_solution`.
+The borderline post proposes using a game's latest update date to decide whether it is abandoned, then asks whether that method works. I label a post `help_request` when it directly asks for advice or validation, even if it includes a tentative method. I use `guide_or_solution` when the post gives steps or an explanation for others without asking them to validate it. [Source post](https://steamcommunity.com/discussions/forum/0/572677904481192974/#c572677904481194739)
 
 ---
 
@@ -183,17 +183,17 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Eight fictional posts at the boundaries of the four labels, to check whether the definitions separated them.
+- *What came back:* The examples separated into the four labels. One circular opinion, “the map is boring because it is boring,” showed that “a stated reason” was too broad.
+- *What I changed:* I required a specific reason, concrete example, or checkable detail for `supported_claim`. I also included unresolved problem reports in `help_request` because a short failure report can be a request for troubleshooting without a question mark.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Initial label suggestions for linked Steam Discussions posts under the written taxonomy.
+- *What came back:* Suggested classes for 20 posts, including a few uncertain opinion and support cases.
+- *What I changed:* These are suggestions only. I must read every linked post and correct or confirm every label before training.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** AI suggestions were created for the first 20 candidate posts and are marked as AI-assisted in `cold_label_worksheet.md`. They are not cold labels. I have not reviewed and confirmed the suggestions yet, so these rows are not ready for `labels.csv` or training.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
