@@ -5,7 +5,7 @@
 #
 # Delete the examples below and put yours in.
 
-supported_claim: a claim or argument that includes a stated reason, concrete example, or checkable detail in the post
-unsupported_take: a confident evaluative or causal claim that offers no reason, concrete example, or checkable detail in the post
+supported_claim: a claim or argument that includes a specific reason, concrete example, or checkable detail in the post; a restatement of the opinion does not count as support
+unsupported_take: a confident evaluative or causal claim that offers no specific reason, concrete example, or checkable detail in the post
 help_request: a post whose main purpose is to ask for advice, an explanation, or troubleshooting help
 guide_or_solution: a post whose main purpose is to give actionable steps or an explanation that answers a game-related question or solves a problem

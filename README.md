@@ -61,7 +61,7 @@ TakeMeter will classify English, game-related posts from the public Steam Discus
 
 ### `supported_claim`
 
-**Definition:** A claim or argument that includes a stated reason, concrete example, or checkable detail in the post.
+**Definition:** A claim or argument that includes a specific reason, concrete example, or checkable detail in the post. A restatement of the opinion does not count as support.
 
 **Example 1:** To be selected from the posts read during taxonomy design, with a source link.
 >
@@ -71,7 +71,7 @@ TakeMeter will classify English, game-related posts from the public Steam Discus
 
 ### `unsupported_take`
 
-**Definition:** A confident evaluative or causal claim that offers no reason, concrete example, or checkable detail in the post.
+**Definition:** A confident evaluative or causal claim that offers no specific reason, concrete example, or checkable detail in the post.
 
 **Example 1:** To be selected from the posts read during taxonomy design, with a source link.
 >
@@ -103,7 +103,7 @@ TakeMeter will classify English, game-related posts from the public Steam Discus
 
 **Which two labels:** `supported_claim` and `unsupported_take`
 **The decision rule I used every time:**
-I counted support only when a reason, concrete example, or checkable detail appeared in the post itself. Confidence or heated wording did not count as support. When the main purpose was to ask for help, I used `help_request`; when it was to provide actionable instructions or an explanation, I used `guide_or_solution`.
+I counted support only when a specific reason, concrete example, or checkable detail appeared in the post itself; repeating the opinion in different words did not count. Confidence or heated wording did not count as support. When the main purpose was to ask for help, I used `help_request`; when it was to provide actionable instructions or an explanation, I used `guide_or_solution`.
 
 ---
 
