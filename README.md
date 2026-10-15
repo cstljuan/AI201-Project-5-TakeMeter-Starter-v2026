@@ -43,7 +43,7 @@ Before starting the stretch work, I plan to add a fourth label, `guide_or_soluti
 
 ## What This Does
 
-TakeMeter will classify English, game-related posts from the public Steam Discussions board. It distinguishes claims supported by reasons or checkable details, unsupported confident takes, requests for help, and actionable solutions. Posts about accounts, payments, age verification, and personal support issues are outside the sampling scope.
+TakeMeter classifies English posts from Arqade, the public Gaming Stack Exchange community. It separates help requests, unsupported claims, evidence-backed claims, and actionable guides or solutions. The sample is drawn from the Arqade Q&A site, not its separate Meta site.
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
@@ -53,78 +53,66 @@ TakeMeter will classify English, game-related posts from the public Steam Discus
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
-
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
-
 ### `supported_claim`
 
-**Definition:** A claim or argument that includes a specific reason, concrete example, or checkable detail in the post. A restatement of the opinion does not count as support.
+**Definition:** A factual explanation or claim that includes a specific, checkable detail, example, source, or test in the post.
 
-**Example 1:** A reply compares newer integrated graphics with older discrete graphics and asks for the laptop model. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c594069369071474102)
->
+**Example 1:** An answer supports its conclusion with a character's level-90 base stat and named equipment. [Answer by pinckerman](https://gaming.stackexchange.com/a/419667)
 
-**Example 2:** A commenter argues that upgrading is unnecessary while many older games remain available. [Source post](https://steamcommunity.com/discussions/forum/0/594069606514065373/#c594069606514158741)
->
+**Example 2:** An answer compares the stated system requirements for Hades and Hades II to support its compatibility conclusion. [Answer by Larnu](https://gaming.stackexchange.com/a/419644)
 
-### `unsupported_take`
+### `unsupported_claim`
 
-**Definition:** A confident evaluative or causal claim that offers no specific reason, concrete example, or checkable detail in the post.
+**Definition:** A factual or evaluative assertion presented without a specific reason, example, source, or checkable detail in the post.
 
-**Example 1:** A commenter says the PC version should arrive quickly without giving a reason. [Source post](https://steamcommunity.com/discussions/forum/0/594069880291049840/#c594069880291052285)
->
+**Example 1:** An answer tentatively names a voice actor while saying it has not found confirmation. [Answer by Somebody](https://gaming.stackexchange.com/a/419683)
 
-**Example 2:** A commenter predicts a future graphics feature will be a game changer without support. [Source post](https://steamcommunity.com/discussions/forum/0/594069606514065373/#c594069606514152898)
->
+**Example 2:** A short answer states what RadAway does to radiation and HP without giving a source or explanation. [Answer by Dave](https://gaming.stackexchange.com/a/418859)
 
 ### `help_request`
 
-**Definition:** A post whose main purpose is to ask for advice or an explanation, or to report an unresolved problem that needs troubleshooting.
+**Definition:** A post whose main purpose is to ask for gameplay information, advice, explanation, or troubleshooting.
 
-**Example 1:** The original poster asks for a curated list of strategy games that run on laptops without dedicated graphics. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/)
->
+**Example 1:** The author describes getting stuck on a Genshin Impact floor and asks for a working strategy. [Question by pinckerman](https://gaming.stackexchange.com/questions/419682/how-to-beat-this-abyss-floor-11-1-iteration)
 
-**Example 2:** A commenter asks whether every game can run on integrated graphics. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c572677904481144043)
->
+**Example 2:** The author asks who voiced new characters in a Warcraft III expansion after not finding credits or an online listing. [Question by TreeSpawned](https://gaming.stackexchange.com/questions/419660/who-are-the-voice-actors-for-warcraft-3-forsaken-kingdom)
 
 ### `guide_or_solution`
 
-**Definition:** A post whose main purpose is to give actionable steps or an explanation that answers a game-related question or solves a problem.
+**Definition:** A post whose main purpose is to provide actionable steps or a method that answers a gameplay question or solves a problem.
 
-**Example 1:** A post gives ordered steps for installing SteamVR, pairing a Quest headset, launching a game, and troubleshooting connection issues. [Source post](https://steamcommunity.com/discussions/forum/0/694249410478104225/)
->
+**Example 1:** An answer says to use Oatchi's rush and strike both walls beside the platform to dislodge Pikmin. [Answer by Nutella](https://gaming.stackexchange.com/a/419669)
 
-**Example 2:** A reply recommends checking game requirements and performance videos to estimate whether a laptop can run a game. [Source post](https://steamcommunity.com/discussions/forum/0/594069369071473790/#c594069369071475463)
->
+**Example 2:** An answer recommends building a Multi-Purpose Room at the base of a Bloodvine, with rebuilding as a fallback. [Answer by voided](https://gaming.stackexchange.com/a/419657)
 
 ### The hardest boundary
 
-**Which two labels:** `help_request` and `guide_or_solution`
-**The decision rule I used every time:**
-The borderline post proposes using a game's latest update date to decide whether it is abandoned, then asks whether that method works. I label a post `help_request` when it directly asks for advice or validation, even if it includes a tentative method. I use `guide_or_solution` when the post gives steps or an explanation for others without asking them to validate it. [Source post](https://steamcommunity.com/discussions/forum/0/572677904481192974/#c572677904481194739)
+**Which two labels:** `supported_claim` and `guide_or_solution`
 
----
+**The decision rule I used every time:** If the post's main purpose is an actionable procedure the reader can follow, label it `guide_or_solution`. If its main purpose is to establish or explain a factual claim with checkable detail, label it `supported_claim`, even when it ends with an optional check. An Arqade answer about an achievement cites the game's mechanics and tells readers where to verify them; I label it `supported_claim` because the answer primarily explains the rule rather than walking the reader through a sequence of actions. [Answer by voided](https://gaming.stackexchange.com/a/419649)
+
+**Taxonomy stress test:** Eight fictional boundary examples were generated and classified before full collection. The examples and results are in [taxonomy_stress_test.md](taxonomy_stress_test.md).
 
 ## The Dataset
 
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Public Arqade questions and answers returned by the Stack Exchange API. Posts were limited to `CC BY-SA 4.0` and English text. Each dataset row records the post author and link, the license, and the HTML-to-text conversion. The 20 Steam candidates in `steam_label_review_worksheet.md` are excluded.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** AI-assisted candidate labels were generated from the taxonomy and text patterns. Juan reviewed all 270 suggestions and confirmed or corrected them. Each row records that review and includes source attribution. This workflow is not cold labeling. The 20-post unaided set is separate and still needs Juan's labels; see [cold_label_worksheet.md](cold_label_worksheet.md). The counts below cover the 270 reviewed rows only.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `help_request` | 55 | 20.4% |
+| `supported_claim` | 55 | 20.4% |
+| `guide_or_solution` | 105 | 38.9% |
+| `unsupported_claim` | 55 | 20.4% |
+| **Total** | **270** | **100%** |
+
+The first 220 rows form the base collection (55 per label). The 50 additional `guide_or_solution` posts implement the planned dataset-size stretch feature. The counts reflect the reviewed labels. Each row includes author and source links with the post's `CC BY-SA 4.0` license attribution.
 
 **Three hard cases**
 
@@ -132,25 +120,25 @@ Say so plainly — the disclosure is required, not penalised. -->
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* The Genshin Impact question calls a mechanic the worst and then asks how to clear a specific floor.
 >
-> *Could have been:*
+> *Could have been:* `unsupported_claim` or `help_request`
 >
-> *I chose, because:*
+> *I chose, because:* The main purpose is to get a working strategy, so it is `help_request`. [Question](https://gaming.stackexchange.com/questions/419682/how-to-beat-this-abyss-floor-11-1-iteration)
 
 **2.**
-> *The post:*
+> *The post:* An answer explains an achievement requirement using a linked game reference and tells readers how to check enemy entries.
 >
-> *Could have been:*
+> *Could have been:* `supported_claim` or `guide_or_solution`
 >
-> *I chose, because:*
+> *I chose, because:* The answer mainly substantiates what the achievement requires; the lookup step is secondary. [Answer](https://gaming.stackexchange.com/a/419649)
 
 **3.**
-> *The post:*
+> *The post:* An answer proposes building a room at the Bloodvine base, with removing and rebuilding the existing room as another path.
 >
-> *Could have been:*
+> *Could have been:* `supported_claim` or `guide_or_solution`
 >
-> *I chose, because:*
+> *I chose, because:* The central purpose is to give the player concrete steps to fix the problem. [Answer](https://gaming.stackexchange.com/a/419657)
 
 ---
 
@@ -189,11 +177,13 @@ of next unit's variance. -->
 
 **Moment 2**
 
-- *What I asked for:* Initial label suggestions for linked Steam Discussions posts under the written taxonomy.
-- *What came back:* Suggested classes for 20 posts, including a few uncertain opinion and support cases.
-- *What I changed:* These are suggestions only. I must read every linked post and correct or confirm every label before training.
+- *What I asked for:* Initial label suggestions for Arqade posts under the written taxonomy, then rechecked each suggestion against the taxonomy.
+- *What came back:* Pattern-based candidates included borderline answers across the evidence-backed and actionable categories.
+- *What I changed:* Juan reviewed all 270 candidate labels against the taxonomy and confirmed or corrected them. The separate cold-label worksheet has no suggestions and remains for independent labeling.
 
-**Pre-labelling disclosure:** AI suggestions were created for the first 20 candidate posts and are marked as AI-assisted in `cold_label_worksheet.md`. They are not cold labels. I have not reviewed and confirmed the suggestions yet, so these rows are not ready for `labels.csv` or training.
+**Acceptance criteria disclosure:** At Juan's request, AI proposed the five numeric targets in [criteria.md](criteria.md) before training. The course's requirement that the student choose those targets was not met.
+
+**Pre-labelling disclosure:** AI generated initial label suggestions for the Arqade dataset; Juan reviewed all suggestions and confirmed or corrected them. Each row is marked `AI-prelabel; reviewed by Juan`. Those labels are not cold. The separate 20-post cold-label worksheet has no label suggestions and remains unfilled, so the course's cold-label requirement was not met.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
