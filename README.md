@@ -146,15 +146,13 @@ The first 220 rows form the base collection (55 per label). The 50 additional `g
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate `2e-5`, batch size 8, maximum 128 tokens per post, seed 42. Device: CPU; PyTorch 2.14.1+cpu.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Batch size was reduced from 16 to 8 because this device has 5.7 GiB total RAM and the initial default-size run exited before producing results. The lower batch size reduces memory demand; all other base settings stay at the defaults.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 188 train / 41 validation / 41 test. Test counts: `supported_claim` 8, `unsupported_claim` 9, `help_request` 8, `guide_or_solution` 16. Metrics for the first three labels may be jumpy because they have only 8–9 test examples.
 
 
 
