@@ -154,6 +154,15 @@ The first 220 rows form the base collection (55 per label). The 50 additional `g
 
 **Split sizes:** 188 train / 41 validation / 41 test. Test counts: `supported_claim` 8, `unsupported_claim` 9, `help_request` 8, `guide_or_solution` 16. Metrics for the first three labels may be jumpy because they have only 8–9 test examples.
 
+**Second training experiment (stretch):** I changed only the learning rate from `2e-5` to `1e-5`; epochs, batch size, seed, token length, data, and split stayed fixed. `results.json` is the `2e-5` run, and [results_second_experiment.json](results_second_experiment.json) is the `1e-5` run.
+
+| Learning rate | Accuracy | Macro F1 |
+|---:|---:|---:|
+| `2e-5` | 0.634 | 0.500 |
+| `1e-5` | 0.390 | 0.140 |
+
+On this seed and split, the lower learning rate reduced accuracy by 0.244 and macro F1 by 0.360. This is one run per setting, so it describes this experiment rather than a general effect.
+
 
 
 ---
