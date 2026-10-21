@@ -206,18 +206,19 @@ On this seed and split, the lower learning rate reduced accuracy by 0.244 and ma
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.293 | 0.634 | +0.341 |
+| Macro F1 | 0.175 | 0.500 | +0.325 |
+| F1: guide_or_solution | 0.316 | 0.711 | +0.395 |
+| F1: help_request | 0.000 | 0.889 | +0.889 |
+| F1: supported_claim | 0.000 | 0.400 | +0.400 |
+| F1: unsupported_claim | 0.383 | 0.000 | -0.383 |
 
-**What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+Both models were scored on the same 41 posts in the committed test_split.csv. The baseline used the original label_definitions.txt and facebook/bart-large-mnli on CPU. baseline_results.json records held_out=true, used_definitions=true and all predictions.
 
-**What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
+**Prediction chronology:** The baseline was launched as environment preparation before a new written prediction was committed. There is no valid pre-run prediction for this setup run; no retrospective prediction is claimed.
+
+**What the gap means:** On this single held-out split, the fine-tuned model beats the definitions-only baseline on overall accuracy, macro F1 and three labels. It performs worse on unsupported_claim. This is not yet the required three-seed result and does not establish that the advantage generalizes across random splits.
+
 
 
 
