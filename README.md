@@ -412,3 +412,11 @@ learned:**
 ---
 
 📖 **How to run this project: [RUNNING.md](RUNNING.md)**
+
+# Unit 6 experiment plan
+
+Declared before Unit 6 experiments: complete the confidence check, the worst-label error analysis, and a second measured improvement. Each will include real numerical evidence and an account of what changed. These items are planned, not completed.
+
+Keep the original criteria, Unit 5 outputs, taxonomy and baseline test split. Record three seeds (42, 7, 2024) before any improvement. Make one diagnosis-driven change, measure it on the same three seeds, then isolate and measure the second change in a third run log. Do not overwrite the first two result files.
+
+The staff agreement exercise is pending Juan's independent 30 labels and the answer file provided by the TF. Do not substitute generated labels or fabricate adjudications.
