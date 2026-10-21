@@ -1,0 +1,245 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 41,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 41,
+    "accuracy": 0.2926829268292683,
+    "f1_macro": 0.17469204927211646,
+    "per_label": {
+      "guide_or_solution": {
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1": 0.3157894736842105,
+        "support": 16
+      },
+      "help_request": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "supported_claim": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "unsupported_claim": {
+        "precision": 0.23684210526315788,
+        "recall": 1.0,
+        "f1": 0.38297872340425526,
+        "support": 9
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "gtaforums : Double-tapping your horn key will toggle the siren. I find you gotta tap it really quickly, and it turns on all the time. Might be just mine though...",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Does time spent doing sidequests in The Witcher 3 affect the main story? I recently bought The Witcher 3, seeing as it had very good reviews and it has been ages since I played a RPG. Now, due to the urgency of the story in the beginning, I feel the need to advance with it rapidly. Yet I somehow have accumulated at least 5 side quests that seem to distract me from my main quest. Is timing really an issue or can I just explore everything I want to?",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "To fix it for this particular patch. In Steam, go to properties -> Betas -> 1.40.8.8 - 1.40.8.8. Then update your game and proceed as normal.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "As you've noticed, meditating lets you end the loop without waiting it out. This is useful when you no longer want to continue the loop, but can't or don't want to let your character die. It essentially works like dozing off next to a campfire, except that it can be done from anywhere and doesn't let you wake yourself up.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "To collect honey, you need to get a special jar from the questgiver by talking to her. Things to know, #1: The jar is valid within a limited quest area only; if you cross its border even a little, the jar and its contents disappear. Try to find the border first before losing honey. To fill the jar, you need to get up to the beehives, and \"use\"/frob them. Different hives give different amounts of honey; an status icon should appear with a number on it. Things to know, #2: The actual collection is only active during a specific quest phase \"Gather honey for the Kodan\", when a timer shows up. Outside that quest, you can still get the jar, do the jumping, but no honey is in the jar. So why can you get the jar when you can't effectively get honey? Officially, it's a bug. But if you go for some achievements, you need to activate/use/frob the hives, regardless of the honey. You can't do that without the jar. So this helps with the achievements, while frustrating players who don't know the special mechanics here. Depending on your other quests, a bee called Ms. Buzz can be found who asks you to give her the honey instead. If you do, she buzzes off and can be found in the \"Queen's Confidence\" location later. It's related to a different quest; no effect to the honey collection other than that. Now, the jumping puzzles can be quite taxing. There's a shortcut here, but it's kind of a spoiler: You can use the Jade Bot Glider Booster skill on \"6\" from EoD. Run up the hill a bit, jump downwards to glide, use booster to gain height. Booster takes 30 seconds to recharge.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Is there a painless way to run Starcraft 2 on Linux? Now that Starcraft 2 is free to play, is there a painless way to run it in Linux? People have been doing it with different success for years, but the hacks are spead over different resources and often are distro specific. I have some specific limitations though. Since I saw file names like Starcraft64 on a Windows install of Starcraft 2, I would like to run it on a clean 64bit Linux distribution without the multilib 32bit compat layer installed. I am fine with either 64bit stable wine or the 64bit staging wine, no wrappers like PlayOnLinux or Lutris should be involved. Is it possible to install and run Starcraft 2 this way? So far I went to starcraft2.com website and downloaded the installer, but when I ran the file tool on it, I was told it is a 32bit Windows executable, so obviously it won't be able to run under pure 64 wine.",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Double-check whether you are digging at the right spot. Since version 1.3 , you have to collect secret note 16 before you can dig the treasure, but you should be able to dig at the spot without the note. Make sure that you dig at the right spot: Dig one space to the right of the large boulder north of the Railroad tracks in the top left corner. See",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Finally got it, putting the info here in case someone has the same question down the line: I took a gang leader's quest (delivering weapons), then bought the necessary weapons. I tried to exort a nearby village, and they fought back, which drove my crime rating up to the point where the kingdom in question declared war on me. (You don't have to go through with the battle against the villagers; you can then cancel). I snuck back into the town (do not use a disguise, otherwise NPCs won't recognise you and you can't complete the quest - it has to be the 'sneak' option that has a chance of failure) and handed over the weapons. I then waited a bit but got captured by a patrol (can't wait inside settlements when you're officially an enemy) I waited some more in prison, eventually I was offered to pay for my freedom, and I took the offer... then the achievement popped. In the end, it feels to me like \"Getting captured and then buying your freedom\" is what counts as \"Completing a quest\", but I can't be entirely sure because I know this game sometimes takes a while to process some achievements, so it could be a coincidence.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "If you don't know who has each diamond Step one Give each player a unique scoreboard ID. See this related question for how to do that. Step two Run the following command in a repeating, always active command block: execute as @e[type=item,nbt={Item:{id:\"minecraft:diamond\"}}] run data merge entity @s {Item:{components:{\"minecraft:custom_data\":{Unclaimed:1b}}}} This gives each diamond item on the ground a custom Unclaimed tag, allowing you implement Step 3 without 30+ command blocks per player Step three Once for each player who could be playing the map, run in a repeating command block: clear @a[scores={Id=1}] diamond[custom_data={Unclaimed:1b}] 1 and then, in a conditional chain command block that the repeating command block is pointing to /give @a[scores={Id=1}] diamond[custom_data={PlayerOwns:1b}] Repeat this for each player, using scores={Id=2} and PlayerOwns:2b for the second player and so on. Step four Now that each diamond has a tag describing whose it is, you can use the technique described in In2itivity's answer to determine who put a diamond in the chest. This has a known bug that if Alice puts a diamond in a container, and then Bob takes the diamond out of the container (and never drops and picks it up again), the diamond is still interpreted as belonging to Alice -- but I actually like that if I understand what you're doing correctly; if you stole someone else's diamond from a chest instead of mining your own, that means you're trying to cheat\u2026 karma! If you want a more seamless experience, you may want to interest yourself in player inventory modification . With the method above, the diamond is visibly replaced by a different one, you can use this to make a seamless replacement.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "What was the first game to show toilets? And by \"toilets\" I mean the actual thing you sit on, not just \"restrooms\". Not trying to be weird; I just remember I first saw them in Fallout 3 (2008) and suddenly realized those fixtures had been underrepresented in video games. Which is understandable in the U.S., where most folks were uncomfortable with restroom stuff. But the Japanese are OK with it (e.g. this ), so I figure some of their old games must feature toilets.",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "I'm almost certain from back when I played Plants vs Zombies that magnet shroom will target the zombie closest to your house (notice how zombies are never spawned in the exact same position, so there will never be a tie).",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "If you're in a winter/cold biome, you can abuse the fact that animals will path-find to available food. This only works in situations where food for wild animals is scarce. The general way you can use this is to create a small room near your killbox that contains some food, like corn. Complete the room with a roof and door, but force the door to stay open. This will protect the food from rotting, but also allows animals to path to it. If you put some type of trap between the animals and the food (I use beartraps in my killboxes), they'll hit the traps and get downed (ideally), or just bleed out. The downsides to this are if the animals make it to the food, they'll eat some of it, and it will also generally cause the area to be covered in blood. Here's an example:",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Sounds like a job for the /team command once again . Teams have a bunch of useful features including push by collisions. You only need to run these commands once: team add no_push team modify no_push collisionRule never team join no_push <target passive mob> Any entity in this team, in particular the passive mob of interest, can never be pushed by anything else. However, it will still interact with leads, which is exactly what is wanted. Team options have a bunch of useful lesser known features, so I highly recommend looking at the /team wiki page You should also consider teleporting the enderman to the passive mob instead of the other way around, that way it will give you more control over the lead",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "How am I touching thorns without taking damage? I think I may have broken the game. The first case was when I was practicing the Path of Pain, and the second was when I was messing around by the 2nd floor White Palace bench. Can someone explain how this works?",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Don't know if this is still relevant but I've beat all games multiple times! The Swamp Castle treasury doorway solution is to gather mud from the base of the nearby water basin. Put the mud in the holes near the door. Then put a plank of wood in the doorway itself and poke the eyes of the painting. If you want any more help with puzzles I'm happy to answer them!",
+      "gold": "guide_or_solution",
+      "predicted": "guide_or_solution"
+    },
+    {
+      "text": "Note: Exercise caution when using any save editor, and always back up your saves. Improper edits may cause save file corruption . If you are willing to do some mild cheating and utilize a save editor, Tenna Editor is an option here. (it's only mild cheating here because we're merging 2 slots. If you haven't done the shadow crystal bosses before, please do not just cheat it in or I will be unhappy with you). Upload your save folder or your Nintendo Switch deltarune.sav file. Select the appropriate save (in this case, CH5 Slot 1 (Completion)) Then, in the \"story\" section for Chapters 3 and 4, set the relevant flags. These will be sorted under the relevant boss's name. If you really want to go the extra mile in merging things, you can compare the values for slot 3 as well. This way you can properly store, for instance, the number of attempts. Additionally, you may want to check for sword route flags, and add the shadow mantle to your armors, if you got the shadow mantle before obtaining the chapter 3 shadow crystal. Consider also adding BlackShard and JusticeAxe. To ensure that you have a file that can be tested for corruption, consider using the actual chapter 5 save instead of the completion save, since the completion save won't be loadable until chapter 6 releases. You will have to finish the chapter from the last save again, but this should be a fairly short segment. Once all this is done, export your saves to the appropriate format depending on the platform.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "In Portal 1, these are \"Advanced Knee Replacements\" In-universe, they appear to make the user invulnerable to fall damage. According to the Wiki , In Portal 1, Chell uses 'Advanced Knee Replacements', until the explosion resulting from her defeat of GLaDOS at the end of the game broke them. In Portal 2 , Chell replaces them with a similar device, the \"Long Fall Boot\", explained in detail in this Aperture Science \"Investment Opportunity\" demonstration video: This video is part of a series of videos that were created to promote Portal 2, showcasing various bits of technology in the Portal universe as if it were actually Aperture Science seeking investors for their research & development. Note that both Portal 1 and Portal 2 are set after Aperture Science's demise Thus both the Advanced Knee Replacements and the Long Fall Boots, must have been made prior to those events. The reason for the replacement comes from the development of Portal 2. According to Matt Charlesworth , one of the people who worked on the game, the team debated keeping or replacing the 'Advanced Knee Replacement' in Portal 2, before eventually settling on the \"Long Fall Boot\" as a variant of the same technology.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "You can beat the game and get any ending variation you wish from the first loop. But there's two sections in the endgame that get easier if you're not on the first loop: Your Signalscope will only show frequencies that you've already unlocked by finding an object that emits that signal. Finding the Vessel usually requires you to either track down an object on radio, or have already found it and marked it on your map. Speedrunners bypass this by simply knowing where it is. The helpful pop-up reminding you of the Eye Coordinates will only appear if you've legitimately seen those coordinates on a previous loop. If you only know the coordinates from out-of-game knowledge, you won't get the reminder but they'll still work. Loop counters, not affected by your actions except the number of loops that pass: You can only sleep at a fire to pass the time after the start of the third loop. The equipment in the Probe Tracking Module will count the number of loops elapsed. According to it, the game starts on loop 9,318,054. The easter egg scroll on Giant's Deep shows a \"world line divergence\" that changes over the course of the loops. The first loop has some important differences until you activate the statue and begin the game proper. You mentioned minor dialogue changes and the possibility to get a game-over by dying, but it's more than that. Time-sensitive events don't happen at all until you trigger the statue. If you somehow get onto your ship and into space without triggering the statue, you'll find that Brittle Hollow doesn't collapse, sand never flows off Ash Twin, and there's no time limit on your exploration. The loop starts from the beginning when you walk past the statue - even if it was broad daylight before, afterwards it'll be midnight on the first day. You usually don't notice this because the museum is indoors.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "The other answers are correct for the base game, but assuming you have the Phantom Liberty expansion, there is one heavily-foreshadowed choice which has lasting consequences & no \"point of no return\" warning. That choice happens in the quest \"Firestarter\". It is not strictly a point of no return since you can still return to the rest of the open world, but some of the endings to Phantom Liberty becomes locked out. If you're interested in experiencing all the endings, make a manual save before the quest.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "I've been playing RDR Online for a few months and just got three businesses: the bounty hunter, the trader, and the moonshiner. It took a lot of grinding, but I wanted to get all three at once. In my personal opinion, the trader and moonshiner are most profitable with cash, but the bounty hunter is best with gold.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Any and all Summoning, when using a password is restricted to that group, including hunters using the Blue Cipher Ring. The only thing that Passwords do not affect is Invasions. If you are using multiple Passwords, this will apply to all of them.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "If you want to use a set coordinate then you can use the x y z and the dz dy dz values to select an area. If you're making only one minigame in that world then you can use this command: /testfor @a[tag=tag_example] If you're making more than one minigame instance but the minigame is far away from the rest then you can use this command: /testfor @e[tag=tag_example,r=20] Where the r is the radius from where the command is run (and if your unsure then you can experiment to see how it works)",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "What's the origin of the term 'seed'? Seeds , in procedurally generated video games, are basically identifiers for the world that's generated. They're random strings or codes for specific worlds, and you can also sometimes input a seed into the game to play on the exact same world, with everything in the same place, that the seed is associated with. 1 What's the origin of the word 'seed' being used in this context? It's a pretty ubiquitous term, but it doesn't quite match its usage (at least for me), so I'd be interested to know how it came about. 1: At least as far as I understand it, which is probably apparently wrong.",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Short Answer: Enter the number \"747\" as the frequency to continue with the game. There is no way to find this information within the game (see full answer below). Full Answer: This is a question that one of my kids brought to me while playing the games that I grew up with, and - while you can find the following information on the internet - I thought it was worthy of documenting within Arqade. Interestingly, the method for getting the frequency has changed over the years. To be able to continue with the game requires knowledge of a 3-digit code that originally was included as a hidden message on a piece of paper that came with StarTropics when purchased new and unopened... 1990 Original NES Release From the original instruction manual: Notice the footnote in the bottom right corner: \"Please read the letter from Dr. Jones appended to this booklet.\" Here is an image of the paper that was appended to the back ( image credit ): The basic gist of the letter is that Uncle Steve is responding to Mike and inviting him to visit him on C-Island. I will emphasize the extra words in the footnote at the bottom: \"Note: This letter is very important so please hold onto it till the end of the game.\" As a kid, I remember thinking it was really cool to have this extra paper that was somehow important to the game. Now that we know about this physical letter, Baboo's cryptic message makes more sense. When the paper was made wet with water, a hidden message would appear ( image credit ): This was a real world component to a video game! Definitely a fun experience as a kid. Nowadays, you will likely buy the game used without the original packaging and manual - and crucial letter to Mike from Uncle Steve! The content of the secret message in the letter contributed to the whole secret spy feel: Uncle Steve felt as though he was being watched and took a precaution to put a \"tiny transmitter in [his] shoe\" which was tuned to the frequency of 747 MHz. 2008 Wii Virtual Console & 2016 Wii-U Virtual Console Releases When Nintendo released StarTropics for the Wii/Wii-U Virtual Console, they included an electronic version of the original letter in the Operations Guide, complete with a way to virtually \"dip\" the letter in water (by clicking on an image of a bucket of water) to reveal the necessary frequency: Here is a video of what it looked like to dip the letter on the Wii. (Thanks to @Showsni for the video link.) It is interesting to note that this virtual dipping only gave the minimum information to continue in the game (frequency 747 MHz), and did not include the hidden message from Uncle Steve revealing his (justified) paranoia and tiny transmitter. 2016 NES Classic Edition Release The NES Classic Edition release included two digital manuals, an \" Electronic Manual \" and a \" Printed Manual \". The \"Printed Manual\" included the image of the blank letter. The \"Electronic Manual\" included a page to explain the letter and give the secret frequency: This gave all the same information as the original printed paper, complete with the secret message communicating Uncle Steve's spy-level precautions. 2019 Nintendo Switch Online Release When the game was released for the Nintendo Switch Online, they apparently omitted any copy of the letter (virtual, digital, or otherwise). Oops! Players who don't have any context to where that frequency was supposed to come from are forced to search online and find this answer: As we have learned from the above, the frequency that Nav-Com should tune to is 747 MHz. Entering this number will allow you to continue the game of StarTropics past Chapter 4.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "The new outfits do NOT effect game play and stats. They are just for show to make your characters look stylish.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "There is a simpler solution to this. You can use the so-called \"figure space\" when specifying the player name for their score. It gets rendered as a regular space while not being parsed as a regular space, unlike other invisible characters (like the no-break space or the en space, for example). You can copy it from here: The Unicode is U+2007 . There may be other invisible characters that would work too but I haven't investigated much further. Hope this still helps someone after 6 years :)",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Why do my cards suddenly look worn out? I recently started playing Magic Arena, and when I booted the game up this evening I noticed my cards all looked completely differently. Specifically, they all look \"worn out\" with a bunch of wear and tear. The below screenshot explains better than text: I'm assuming I did something to trigger this change, but I can't figure out what I did and how to reverse it. Why do my cards suddenly look worn out, and how can I reverse this?",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Grow big enough. You need to make a circle around them. You need to make round circles by sliding your body. Each circle will be smaller than the last one because your tail will go to the center. You don't need to take dangerous actions. In case the opponent's head is far away from you, you may cut the inner space.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Nintendo has documented that yes, the original Switch Joy Cons will be able to wirelessly connect to the Switch 2: Can be used by pairing wirelessly to Nintendo Switch 2. Cannot be attached to Nintendo Switch 2. A Nintendo Switch console or compatible accessory such as a Joy-Con charging grip or Joy-Con charging stand (two-way) is required for charging.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Why is fast travel only available intermittently in Disco Elysium? Sometimes, when I open the map in the journal, I am given the option to fast travel to another area, but most of the time it does not present the option. Any explanation why it is only available some of the time? I can't find any pattern.",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "This is the timeline of the games as we currently understand it \u2020 , according to official and unofficial sources : Main Timeline Skyward Sword (\"Many years\" later + 100 years) The Minish Cap (\"Generations\" later) Four Swords (After the Hylian civil war that lasted \"a long time\") Ocarina of Time / | \\ Fallen Hero Timeline Child Timeline Adult Timeline (\"Many years\" later) A Link to the Past (Several months later) Majora's Mask (\"Ages\" + hundreds of years later) The Wind Waker (Soon after) Link's Awakening (\"Many years\" later) Twilight Princess (Soon after) Phantom Hourglass (Soon after) Oracle of Seasons/Ages (Hundreds of years later) Four Swords Adventures (One hundred years later) Spirit Tracks (Centuries later) A Link Between Worlds | | (Soon after) Triforce Heroes | | (An unknown amount of time later) Echoes of Wisdom * | | (\"Many years\" later) The Legend of Zelda | | (Six years later) The Adventure of Link | | (?)** (?)** (?)** Era of the Wilds/Great Calamity (Possibly more than 10,000 years later) Breath of the Wild * (Soon after) Tears of the Kingdom * The most confusing part is the timeline split after the events of Ocarina of Time . The quick explanation is that the Fallen Hero Timeline is the timeline where Link fails his quest and Ganon ends up with the completed Triforce, forcing the Sages to seal it and him within the Sacred Realm, which is now the Dark World. The Child Timeline is where Link successfully defeats Ganon and goes back in time as a child (i.e., the final scene of Ocarina of Time ). He warns Zelda about Ganondorf's betrayal and they prevent him from ever stealing the Triforce in the first place, though he survives his execution due to the gods giving him the Triforce of Power anyway ( for some reason ). The Adult Timeline stays in the future timeline after Link defeats Ganon. Because Link went back in time (to the Child Timeline), this timeline no longer has its Hero. So the next time Ganon appears, the gods are forced to intervene, resulting in the global flood. * : These games were released after the most recent official chronology update, so their place in the chronology is inferred from the in-game lore and might not be correct or might be retconned in the future. ** : It has been loosely confirmed that Breath of the Wild and Tears of the Kingdom take place at the end of one of the timelines, but which timeline specifically has apparently been left up to the imagination of the player . \u2020: It is worth mentioning that according to The Legend of Zelda: Encyclopedia , the chronology of the Zelda games is not a high priority for Nintendo. They will maintain the timeline if practical, but they are also not afraid of breaking it for the sake of telling the story they want to tell for a specific game, and that ultimately the intention was always for the players themselves to create their own chronology according to their imagination. (Even the Encyclopedia itself states in its foreword that it was written with a certain amount of creative license to fill in some gaps.) So while the official timeline exists for the sake of convenience, it shouldn't be seen as an absolute truth.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Well, back in the day, there was Nintendo Power , which was were it was at for all the incites. Other than that, just launch 2 player with no second player and experiment with the controller.",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Quake 3: Ray Traced (Q3RT) was released in 2004 by Daniel Pohl using the OpenRT library to demonstrate real-time ray tracing, but was mostly a research project. Demo: Retrospective research paper by the same author: Title: 15 Years Later: A Historic Look Back at \"Quake 3: Ray Traced\" Daniel Pohl, Selvakumar Panneer, Deepak Vembar, Carl Marshall . DOI: http://dx.doi.org/10.15439/2020F3 Citation: Proceedings of the 2020 Federated Conference on Computer Science and Information Systems, M. Ganzha, L. Maciaszek, M. Paprzycki (eds). ACSIS, Vol. 21, pages 401\u2013412 (2020) Abstract: Real-time ray tracing has been a goal and a challenge in the graphics field for many decades. With recent advances in the hardware and software domains, this is becoming a reality today. In this work, we describe how we got to this point by taking a look back at one of the first fully ray traced games: Quake 3: Ray Traced . We provide insight into the development steps of the project with unreleased internal details and images. From a historical perspective, we look at the challenges pioneering in this area in the year 2004 and highlight the learnings in implementing the system, many of which are relevant today. We start by going from a blank screen to the full ray traced gaming experience with dynamic animations, lighting, rendered special effects and a simplistic implementation of the gameplay with basic AI enemies. We describe the challenges encountered with aliasing and the methods used to alleviate it. Lastly, we describe for the first time the unofficial continuation of the project, code named Quake 3: Team Arena Ray Traced , and provide an overview of the changes over the past 15 years that made it possible to generate fully ray-traced interactive gaming experiences with mass market hardware and an open software stack.",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "First off: Don't panic! Your virtual cards will not lose value from wear, as they do not actually exist. Second: As per a bunch of other users posting similar stories on the MTG: Arena subreddit , I think this can answered as: \"April Fools!\"",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "No, it's not necessary: I left a Kingmaker character \"Active\" while I was offline and they were slain in my absence! A more official Answer with technical details rather than anecdotal ones would be very interesting",
+      "gold": "unsupported_claim",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Which video game had the first \"summon supporter\" mechanic? (Summoning a \"sub character\" to fight) Which video game had the first \"summon supporter\" mechanic? (Summoning a \"sub character\" to fight) This question was directly caused by Nintendo filing a patent to support their lawsuit against Palworld . It strikes me as quite generalised, so I wondered whether there really was no \"summon mob\" mechanic in this sense before Pok\u00e9mon Red/Green release in February of 1996, which could be used to argue against this patent. To clarify: any summoning NPC that fights for you counts. Whether it's a named and specified character or a featureless blob.",
+      "gold": "help_request",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "First, \"Run Game\" to make sure the game is loaded into the iframe and the data is available in the browser. Open browser dev tools on the webpage with the game ( Ctrl/Cmd + Shift + i , F12 , right click -> Inspect). Chrome: \"content overrides\" must be enabled in the dev tools settings ( F1 or Shift + ? while focused in dev tools window), under Preferences -> Persistence header -> Enable local overrides . Disable this after using. In dev tools go to: Chrome: Sources -> Page tab on top left -> drill down: top -> index.html -> html-classic.itch.zone -> html/12787019 -> js -> right click rmmz_managers.js -> select Override content -> select folder to store custom local version of file -> press Allow in popup at top of browser. Firefox: Debugger -> Sources tab on top left -> drill down https://html-classic.itch.zone/html/12787019/index.html -> html-classic.itch.zone -> html/12787019/js -> right click rmmz_managers.js -> Add script override -> select folder to store custom local version of file. Edit the local copy of rmmz_managers.js following below. Overriding loadObject will cause it to log when starting the game, which will require restarting the game to get additional logs. Overriding saveObject will instead cause it to log when saving. loadObject StorageManager.loadObject = function(saveName) { return this.loadZip(saveName) .then(zip => this.zipToJson(zip)) .then(json => { console.log(saveName, json) return this.jsonToObject(json) }) }; saveObject StorageManager.saveObject = function(saveName, object) { return this.objectToJson(object) .then(json => { console.log(saveName, json) return this.jsonToZip(json) }) .then(zip => this.saveZip(saveName, zip)); }; Now, reload the page with the game and press \"Run Game\" again to cause the browser to load the override, and go to the Console tab in browser dev tools. After loading or saving, as chosen, it will log the name of the file + the save data to the Console where you can highlight and copy it (or just press Copy if it's a lot of data, like the file N saves), then paste that in a file somewhere you'll remember like your desktop with a proper name so you know which of the 3+ files it is ( config , global , file0 - autosave, file1 ... fileN - manual save). Go to save-editor.com and one by one upload each JSON file and use the \"File Encoder\" option of the site to convert it to a .rmmzsave file and then manually download it. Finally, go to the folder containing the offline/PC version of the game (and make sure the game is not running - didn't test with it running, but to be safe), go into the save folder, then delete/move/backup existing data if desired and move the newly-converted save data in, start the game, and if done properly the save data will show up when you press \"Continue\". If not done properly it will just ignore the save files and there will be nothing to continue from. This would also occur if the online version vs offline version don't match, as RPGMaker does check the engine versions when it first starts. RPGMaker Save Editor is an Electron app which can do this locally. Not very pretty, but it seems to be functional. I don't plan to maintain it, but have updated the app to the latest Electron and submitted it to the author.",
+      "gold": "guide_or_solution",
+      "predicted": "guide_or_solution"
+    },
+    {
+      "text": "You unlock this after the 2nd quest (where you rescue the Support team from a Quematrice). Once you get back to base camp, Y'sai gives you a gift -- use of a Seikret with a new saddle and a holster for a secondary weapon. After this, you can equip the secondary weapon anytime you can change your equipment.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "It's complicated, and I have not developed a complete understanding of it in my trip down this rabbit hole, but I would like to document what I have learned in this answer. First, it's good to understand more precisely what the question is about. When you hover a game on the main store page, you get a little info card about the game: What do those icons mean? Looking at the HTML gives us the file names of those icons: ico_singlePlayer.png , ico_multiPlayer.png and ico_coop.png . If you look at the store page for a game, there is an info section for the game that features those same icons (this one being from Project Zomboid as well): But as you can see, while the info section use the same icons, it does not have a matching number of them, meaning the hover list is not simply a reproduction of the info section. The mystery deepens further when you realise some games show the multiplayer icon without having an info section entry using it (example: Fast Food Simulator), and others show the Co-op icon without a Co-op entry (example: Hearts of Iron IV). The latter one provided a clue. How is Hearts of Iron IV associated with Co-op? The answer turns out to be that Co-op is one of the popular user defined tags for it: This is the only thing relating to Co-op I can find on that game's store page, leading me to believe that the extra icons correspond to tags. Annoyingly the tags don't show these icons, so exactly which tags are associated with which icons is a detail buried in Steam's code base. Cutting out the gory details of all the games I looked at to piece this together, my current model is that this sequence of icons will be, in order: A single player icon, if the game features a single player mode A multiplayer icon, if the game features any form of multiplayer A sequence of zero or more multiplayer icons corresponding to tags and info section entries A sequence of zero or more co-op icons corresponding to tags and info section entries A multiplayer icon, if the game features cross platform multiplayer Points of unclarity being which tags are relevant, and whether there are any other obscure factors that could stick an icon somewhere in the sequence. But this matches all of the games I've looked at, at least. Useful information you can get from looking at this seems to be If it has a single player mode If it has a multiplayer mode If it has co-op If there is more than one multiplayer icon before the co-op section, it seems to feature some sort of non co-op multiplayer If there is a multiplayer icon after the co-op section, it has cross platform multiplayer",
+      "gold": "guide_or_solution",
+      "predicted": "guide_or_solution"
+    },
+    {
+      "text": "To pair your controller with a second Puck or Steam Machine and use it as a second device, you need to ensure that your controller is turned on in its second pairing slot. When turning on your controller, hold down L1 + A and then (while the other buttons are still held) press Steam , to go into its second pairing slot (this appears to be the information the Steam help page is missing). Your controller will make a different to normal noise when it turns on; the different noises are meant to help denote what device the controller is going to attempt to pair to. Then follow the pairing instructions in the question. The controller will now pair to the device and use the Puck/Steam Machine as the 2nd device. You can then see the 2 paired devices in your Steam Settings, under Controller, while the Controller is turned on: In the future, you should hold the relevant buttons when turning on the controller to connect to the correct device. R1 + A , Steam to connect to your primary device (the Steam Machine in this example), and L1 + A , Steam for the secondary (the Puck attached to the PC in this example). The controller will, however, remember what pairing slot it was last in if you simply turn it on with the Steam button. So, if you were last using your controller with your Puck, turning it on with the Steam button will mean it'll attempt to pair to the second device (the Puck). Again, the noise the controller makes will help you identify what device it will try to pair to. You need to turn the controller off (hold the Steam button), and and turn it back on with the correct button combination to change pairing slot. Note, you can also use R1 + B , Steam to enable Bluetooth pairing. Of course, pairing with Bluetooth doesn't follow the above instructions as this doesn't use a Puck.",
+      "gold": "guide_or_solution",
+      "predicted": "unsupported_claim"
+    },
+    {
+      "text": "Leather Goddesses of Phobos was a text adventure released by Infocom in 1986 and included a content warning: Some material in this story may not be suitable for children, especially the parts involving sex, which no one should know anything about until reaching the age of eighteen (twenty-one in certain states). This story is also unsuitable for censors, members of the Moral Majority, and anyone else who thinks that sex is dirty rather than fun. The attitudes expressed and language used in this story are representative only of the views of the author, and in no way represent the views of Infocom Inc. or its employees, many of whom are children, censors, and members of the Moral Majority. (But very few of whom, based on last year's Christmas Party, think that sex is dirty.) By now, all the folks who might be offended by LEATHER GODDESSES OF PHOBOS have whipped their disk out of their drive and, evidence in hand, are indignantly huffing toward their dealer, their lawyer, or their favorite repression-oriented politico. So... Hit the RETURN/ENTER key to begin!",
+      "gold": "supported_claim",
+      "predicted": "unsupported_claim"
+    }
+  ]
+}
