@@ -1,6 +1,6 @@
 # Cold-label worksheet — Arqade
 
-These 20 posts are not in `labels.csv` and have no AI label suggestions. Label them independently using the taxonomy in `README.md`. Do not look up model suggestions. After labeling, add the rows to `labels.csv` with `cold` in the note plus the attribution shown for each post. For answers, classify the answer text; the parent question is context only.
+These 20 posts are not in `labels.csv`. At Juan's request, Codex suggested the labels below using the taxonomy in `README.md`; they are AI-assisted suggestions, not independent cold labels. Juan can review and change them. For answers, classify the answer text; the parent question is context only. Do not add these rows as independent cold labels.
 
 ## 1. Question
 
@@ -10,7 +10,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** user430393
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `help_request`
+
+**Reason:** Asks what the game mode does and how it differs.
 
 ## 2. Question
 
@@ -20,7 +22,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** xtropicalsoothing
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `help_request`
+
+**Reason:** Asks where to find a character to complete a quest.
 
 ## 3. Question
 
@@ -30,7 +34,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** voided
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `help_request`
+
+**Reason:** Asks how to fix a quest that will not advance.
 
 ## 4. Question
 
@@ -40,7 +46,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Geryon
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `help_request`
+
+**Reason:** Asks whether suitable mods exist.
 
 ## 5. Question
 
@@ -50,7 +58,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Akixkisu
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `help_request`
+
+**Reason:** Asks how to browse other guilds.
 
 ## 6. Answer
 
@@ -63,7 +73,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** pinckerman
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Explains arrow recovery and cites two sources; the switching advice is secondary.
 
 ## 7. Answer
 
@@ -76,7 +88,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** 58x
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `guide_or_solution`
+
+**Reason:** Gives a sequence of actions for changing both values.
 
 ## 8. Answer
 
@@ -89,7 +103,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Malady
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Identifies a specific location and object, a checkable detail. The quoted dialogue is missing from the extracted text.
 
 ## 9. Answer
 
@@ -102,7 +118,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Perry
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `guide_or_solution`
+
+**Reason:** Provides a command and tells the reader which parts to replace.
 
 ## 10. Answer
 
@@ -115,7 +133,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Pilzkopf
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Explains specific effects of two block types, rather than focusing on a procedure.
 
 ## 11. Answer
 
@@ -128,7 +148,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Elements In Space
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Explains the storyline using specific dialogue, consequences and a referenced video; advice is secondary.
 
 ## 12. Answer
 
@@ -141,7 +163,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Suhaas Borra
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Describes a concrete personal setup and driver-signing workaround. The recollection about a Microsoft fix is tentative.
 
 ## 13. Answer
 
@@ -154,7 +178,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Amarth
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Gives detailed technical reasoning while explicitly identifying its game-specific explanation as speculation.
 
 ## 14. Answer
 
@@ -167,7 +193,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Franck Dernoncourt
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Supports a photo-mode example with the game, year and quoted description.
 
 ## 15. Answer
 
@@ -180,7 +208,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Wondercricket
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Uses the perk description and cited community research to explain the damage difference.
 
 ## 16. Answer
 
@@ -193,7 +223,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** TreeSpawned
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Uses the game rarity category and specific item examples to support the answer.
 
 ## 17. Answer
 
@@ -206,7 +238,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Firestorm
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `guide_or_solution`
+
+**Reason:** Directs the player to specific locations and describes how to refresh an enemy.
 
 ## 18. Answer
 
@@ -219,7 +253,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** NODO55
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `guide_or_solution`
+
+**Reason:** Walks through a method using feature definitions and a worked birch-tree example; it also makes explicit assumptions.
 
 ## 19. Answer
 
@@ -232,7 +268,9 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** Nzall
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Explains wireless compatibility with specific examples of unavailable features. The post does not cite a source.
 
 ## 20. Answer
 
@@ -245,4 +283,6 @@ These 20 posts are not in `labels.csv` and have no AI label suggestions. Label t
 **Author:** FakeNews
 **License:** CC BY-SA 4.0
 
-**Your label:**
+**AI-suggested label:** `supported_claim`
+
+**Reason:** Uses specific damage figures and comparisons as checkable details, though the post does not cite a source.

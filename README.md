@@ -186,11 +186,13 @@ On this seed and split, the lower learning rate reduced accuracy by 0.244 and ma
 
 - *What I asked for:* Initial label suggestions for Arqade posts under the written taxonomy, then rechecked each suggestion against the taxonomy.
 - *What came back:* Pattern-based candidates included borderline answers across the evidence-backed and actionable categories.
-- *What I changed:* Juan reviewed all 270 candidate labels against the taxonomy and confirmed or corrected them. The separate cold-label worksheet has no suggestions and remains for independent labeling.
+- *What I changed:* Juan reviewed all 270 candidate labels against the taxonomy and confirmed or corrected them. Later, Juan requested AI suggestions for the separate 20-post worksheet; these are not independent cold labels and remain outside the training dataset.
 
 **Acceptance criteria disclosure:** At Juan's request, AI proposed the five numeric targets in [criteria.md](criteria.md) before training. The course's requirement that the student choose those targets was not met.
 
-**Pre-labelling disclosure:** AI generated initial label suggestions for the Arqade dataset; Juan reviewed all suggestions and confirmed or corrected them. Each row is marked `AI-prelabel; reviewed by Juan`. Those labels are not cold. The separate 20-post cold-label worksheet has no label suggestions and remains unfilled, so the course's cold-label requirement was not met.
+**Pre-labelling disclosure:** AI generated initial label suggestions for the Arqade dataset; Juan reviewed all suggestions and confirmed or corrected them. Each row is marked `AI-prelabel; reviewed by Juan`. Those labels are not cold. The separate 20-post worksheet now contains AI suggestions, not unaided labels, so the course's cold-label requirement remains unmet. The historical statement in criteria.md describes the state when that file was committed.
+
+**Unit 6 AI disclosure:** At Juan's request, Codex suggested the 20 worksheet labels and the 30 staff-set labels, prepared the local experiment runner, measured the token-length distribution, ran the trials, and drafted the analysis. The staff suggestions are not independent student annotations. Juan has not reviewed or confirmed those suggestions.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
@@ -224,68 +226,65 @@ Both models were scored on the same 41 posts in the committed test_split.csv. Th
 
 ---
 
-## Run Log — Before
+**Worksheet disclosure:** At Juan's request, Codex suggested labels for the 20-post worksheet; the local Unit 5 and Unit 6 copies contain the same suggestions. They are not independent cold labels and are not in the training dataset.
 
-<!-- Five criteria across three seeds. The notebook's section 6 prints the
-     spread table; the Target and Verdict columns are yours. -->
+## Run Log - Before
+
+Data: the original 270 reviewed, AI-prelabelled Arqade posts. Each seed independently trains DistilBERT for three epochs at learning rate 2e-5, batch 8 and 128 tokens. Device: Apple Silicon GPU (MPS), PyTorch 2.14.1. Each test split contains 41 posts; seed 42 uses the same held-out texts as the original Unit 5 result. Metrics and the source dataset hash are in `results_three_seeds_before.json`. No AI-suggested worksheet rows were added.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+|---|---|---:|---:|---:|---|
+| Overall accuracy | at least 0.60 | 0.610 | 0.561 | 0.585 | MISSED |
+| Macro F1 | at least 0.55 | 0.461 | 0.399 | 0.364 | MISSED |
+| Lowest label F1 | each at least 0.40 | 0.000 | 0.000 | 0.000 | MISSED |
+| Largest label share | at most 0.45 | 0.389 | 0.389 | 0.389 | MET |
+| Most-confident-third accuracy | at least 0.70 | 0.769 | 0.769 | 0.846 | MET |
 
-### Confusion matrix
+The per-label criterion requires every label to meet its floor, so the table shows the lowest F1 for each seed. The balance row is the same across seeds because the underlying dataset does not change.
 
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
+| Label F1 | Seed 42 | Seed 7 | Seed 2024 |
+|---|---:|---:|---:|
+| `supported_claim` | 0.222 | 0.000 | 0.000 |
+| `unsupported_claim` | 0.000 | 0.222 | 0.000 |
+| `help_request` | 0.941 | 0.706 | 0.727 |
+| `guide_or_solution` | 0.681 | 0.667 | 0.727 |
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+### Seed 42 confusion matrix
 
-**My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
+| True label / predicted | supported_claim | unsupported_claim | help_request | guide_or_solution |
+|---|---:|---:|---:|---:|
+| supported_claim | 1 | 0 | 0 | 7 |
+| unsupported_claim | 0 | 0 | 1 | 8 |
+| help_request | 0 | 0 | 8 | 0 |
+| guide_or_solution | 0 | 0 | 0 | 16 |
 
+The largest error is eight true `unsupported_claim` posts predicted as `guide_or_solution`; the reverse happened zero times. Seven of eight true `supported_claim` posts were also predicted as guides. In this split the model favors the larger guide category and misses the evidence distinction, although the matrix alone cannot prove why.
 
+### Confidence check
 
----
+| Seed | Most-confident third accuracy | Least-confident third accuracy | Difference | Posts in each group |
+|---|---:|---:|---:|---:|
+| 42 | 0.769 | 0.231 | +0.538 | 13 |
+| 7 | 0.769 | 0.308 | +0.462 | 13 |
+| 2024 | 0.846 | 0.154 | +0.692 | 13 |
+
+This ranks the predictions by model confidence; it is not a probability calibration test. Groups contain only 13 posts each.
 
 ## Verdicts and Diagnoses
 
-<!-- MET or MISSED against LAST UNIT's target. The target has to hold across
-     all three seeds, not turn up sometimes. -->
+Accuracy misses its target because seed 7 is below 0.60. Macro F1 misses on all three seeds, and the per-label floor misses in every seed. The label-balance and most-confident-third criteria meet their thresholds in all three trials. These criteria were proposed by AI before the original training run; they have not been changed.
 
-| # | Criterion | Target | Verdict | How I decided |
-|---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+The three claim-label F1 scores are low across trials while the guide label has 105 examples and the other labels have 55 each. The seed 42 matrix shows claim posts often classified as guides. The small test supports of 8 or 9 for each claim label make the scores volatile; label imbalance and overlap in how posts explain or give steps are plausible contributors, not established causes. Agreement evidence is pending, so inconsistent annotation cannot yet be assessed from the staff exercise. A token audit found 145 of 270 posts exceed the 128-token limit: 40/55 supported claims, 28/55 help requests, 77/105 guides, and 0/55 unsupported claims. This truncates different proportions by class and could conceal relevant context or encourage reliance on length; the counts alone do not establish its effect on accuracy. At 256 tokens, 82 posts still exceed the limit. Full counts are in `token_length_audit.json`.
 
-**Diagnoses**
+### Worst-label examples
 
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
-
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
-
-
+By lowest recall in the seed 42 matrix, `unsupported_claim` is the worst: 0 of 9 recovered, F1 0.000. Eight were classified as guides and one as a help request; no true guide was classified as an unsupported claim. Two guide-predicted errors include [this siren-control answer](https://gaming.stackexchange.com/a/419440) and [this explanation of meditation](https://gaming.stackexchange.com/a/418407). Both discuss actions a player can take, a possible overlap with the guide boundary. These are observations about the text, not proof of why the model erred. The complete actual predictions and confidences are in `predictions_three_seeds_before.json`; source attribution is retained in `labels.csv`.
 
 ---
 
 ## Agreement Report
+
+**Status:** At Juan's request, Codex suggested the 30 labels in `my_staff_labels.csv` and explained them in `staff_label_worksheet.md`. They are AI-assisted, not independent student annotations. The staff reference labels have not been obtained or opened; no agreement rate or adjudications are available yet.
 
 <!-- Your rate against the staff set, and every disagreement adjudicated.
 
@@ -341,40 +340,65 @@ Both models were scored on the same 41 posts in the committed test_split.csv. Th
 
 ## The Improvement
 
-**What I changed:**
+### First experiment: more training epochs
 
-**Which diagnosis pointed at it:**
+The original trials showed low claim-label F1 and improving validation loss over the original three epochs. As a test of undertraining, the first experiment changes the epoch count from 3 to 5; the initial learning rate remains 2e-5, batch size 8, maximum length 128, dataset and seeds are unchanged. The scheduler decays across the total training steps, so changing epoch count also changes its schedule over time. This is a training hypothesis, not proof of the cause of errors.
 
-### Run Log — After
+### Run Log - After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+|---|---|---:|---:|---:|---|
+| Overall accuracy | at least 0.60 | 0.780 | 0.780 | 0.707 | MET |
+| Macro F1 | at least 0.55 | 0.748 | 0.734 | 0.663 | MET |
+| Lowest label F1 | each at least 0.40 | 0.615 | 0.364 | 0.429 | MISSED |
+| Largest label share | at most 0.45 | 0.389 | 0.389 | 0.389 | MET |
+| Most-confident-third accuracy | at least 0.70 | 0.846 | 0.769 | 0.923 | MET |
 
-**Did it help, and how do I know:**
+### Second experiment: longer inputs
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+The token audit found that 145/270 posts exceed 128 tokens, including 40/55 supported claims and 77/105 guides, compared with 0/55 unsupported claims. To test whether more context helps, this cumulative experiment keeps the first experiment's five epochs and changes the input limit from 128 to 256 tokens. At the new limit, 82/270 posts still exceed the limit. All other settings and the same seed-specific train, validation and test posts are held fixed.
 
+### Run Log - After Second
 
+| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
+|---|---|---:|---:|---:|---|
+| Overall accuracy | at least 0.60 | 0.829 | 0.756 | 0.805 | MET |
+| Macro F1 | at least 0.55 | 0.814 | 0.681 | 0.767 | MET |
+| Lowest label F1 | each at least 0.40 | 0.615 | 0.200 | 0.615 | MISSED |
+| Largest label share | at most 0.45 | 0.389 | 0.389 | 0.389 | MET |
+| Most-confident-third accuracy | at least 0.70 | 0.846 | 0.769 | 0.923 | MET |
+
+### Paired comparison
+
+| Seed | Before accuracy | Five epochs accuracy | Five epochs + 256 tokens accuracy | Before macro F1 | Five epochs macro F1 | Five epochs + 256 tokens macro F1 |
+|---|---:|---:|---:|---:|---:|---:|
+| 42 | 0.610 | 0.780 | 0.829 | 0.461 | 0.748 | 0.814 |
+| 7 | 0.561 | 0.780 | 0.756 | 0.399 | 0.734 | 0.681 |
+| 2024 | 0.585 | 0.707 | 0.805 | 0.364 | 0.663 | 0.767 |
+
+### Confidence comparison in the new runs
+
+| Run | Seed | Most-confident third | Least-confident third | Difference | Posts per group |
+|---|---:|---:|---:|---:|---:|
+| after | 42 | 0.846 | 0.692 | +0.154 | 13 |
+| after | 7 | 0.769 | 0.692 | +0.077 | 13 |
+| after | 2024 | 0.923 | 0.462 | +0.462 | 13 |
+| after_second | 42 | 0.846 | 0.923 | -0.077 | 13 |
+| after_second | 7 | 0.769 | 0.692 | +0.077 | 13 |
+| after_second | 2024 | 0.923 | 0.615 | +0.308 | 13 |
+
+The same held-out texts are paired across configurations for each seed; different seeds use different test splits. These experiments were chosen after examining earlier results and reuse those held-out examples, so their comparisons are exploratory and should not be treated as an unbiased final estimate. The original Unit 5 results and test split remain unchanged. Each result JSON records settings, device and dataset hash; the corresponding predictions JSON records actual examples and confidence.
+
+Five epochs versus three improved macro F1 in all three paired trials; per-seed changes were +0.287, +0.335, +0.299.
+The 256-token limit versus 128 had mixed or unchanged macro F1 across the paired trials; per-seed changes were +0.066, -0.053, +0.105.
 
 ---
 
 ## What's Still Broken
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
+The final experiment still misses the all-seed target for per-label F1: `supported_claim` scores 0.200 on seed 7, below the 0.40 floor. More independently reviewed examples for the weak categories and a fresh held-out evaluation would be useful next steps; the current evidence does not establish which intervention will work.
 
-
-
-**The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
-
-
+The original taxonomy was intended to distinguish claims by evidence and separate them from actionable guides. The initial seed 42 matrix instead sent 15 of 17 claim posts to the guide category, so the model did not reliably capture that boundary in the starting run. The pending staff reference and AI-assisted staff suggestions cannot independently verify Juan's labeling consistency. Further work stopped here because the staff reference file is unavailable and the original evaluation split has already been reused.
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
@@ -416,8 +440,8 @@ learned:**
 
 # Unit 6 experiment plan
 
-Declared before Unit 6 experiments: complete the confidence check, the worst-label error analysis, and a second measured improvement. Each will include real numerical evidence and an account of what changed. These items are planned, not completed.
+Declared before Unit 6 experiments: complete the confidence check, the worst-label error analysis, and a second measured improvement. The confidence check, worst-label analysis, and second measured experiment are recorded above with numerical evidence; staff agreement remains pending.
 
 Keep the original criteria, Unit 5 outputs, taxonomy and baseline test split. Record three seeds (42, 7, 2024) before any improvement. Make one diagnosis-driven change, measure it on the same three seeds, then isolate and measure the second change in a third run log. Do not overwrite the first two result files.
 
-The staff agreement exercise is pending Juan's independent 30 labels and the answer file provided by the TF. Do not substitute generated labels or fabricate adjudications.
+The staff agreement exercise is pending the answer file provided by the TF. Juan requested AI-suggested labels, documented above, so any comparison describes AI-assisted agreement rather than his independent annotation. Do not fabricate adjudications.
