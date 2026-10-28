@@ -284,57 +284,9 @@ By lowest recall in the seed 42 matrix, `unsupported_claim` is the worst: 0 of 9
 
 ## Agreement Report
 
-**Status:** At Juan's request, Codex suggested the 30 labels in `my_staff_labels.csv` and explained them in `staff_label_worksheet.md`. They are AI-assisted, not independent student annotations. The staff reference labels have not been obtained or opened; no agreement rate or adjudications are available yet.
+**Pending:** The 30 annotations in `my_staff_labels.csv` were suggested by Codex at Juan's request, with explanations in `staff_label_worksheet.md`. They are AI-assisted, not independent student labels. The staff reference file has not been obtained, so no agreement rate or disagreements are claimed.
 
-<!-- Your rate against the staff set, and every disagreement adjudicated.
-
-     Remember you labelled these 30 under the STAFF taxonomy in
-     data/staff_taxonomy.md, not your own — so every argument below is made
-     from those definitions and those decision rules. -->
-
-**Agreement rate:** ___ / 30 = ___%
-
-<!-- Nobody grades this number. A 60% who argues every disagreement from the
-     stated rules beats a 95% who wrote "staff was right" nine times. Several
-     of the 30 were chosen because they're genuinely ambiguous — you should be
-     winning some of these. -->
-
-**Disagreements**
-
-<!-- Three lines each: the post, both labels, and who you think is right and
-     why — grounded in the staff definitions you were both applying.
-
-     Then sort each into one of three piles:
-       (a) the rule covered it and I applied it loosely → a consistency problem
-       (b) the rule genuinely doesn't say               → a gap in the definitions
-       (c) the rule is ambiguous here and my reading is defensible → argue it.
-           This is a legitimate win.
-
-     Pile (a) is the one that matters most for your diagnosis: if you applied a
-     written rule two different ways on 30 posts, that is direct evidence about
-     what you did across your own 200. -->
-
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**What the pattern in my disagreements tells me:**
-
-
+When the teaching fellow supplies the real file, put it at `data/staff_labels.csv` with `id,label` columns and run `python compare_staff_labels.py`. The script checks that all 30 IDs, texts and labels match the expected set before writing `agreement_results.json`. It records that these are AI suggestions. Then assess every actual disagreement against `data/staff_taxonomy.md`; do not claim the result measures Juan's independent annotation.
 
 ---
 
