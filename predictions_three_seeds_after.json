@@ -1,0 +1,863 @@
+[
+  {
+    "seed": 42,
+    "text": "gtaforums : Double-tapping your horn key will toggle the siren. I find you gotta tap it really quickly, and it turns on all the time. Might be just mine though...",
+    "true_label": "unsupported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.3782992959022522
+  },
+  {
+    "seed": 42,
+    "text": "Does time spent doing sidequests in The Witcher 3 affect the main story? I recently bought The Witcher 3, seeing as it had very good reviews and it has been ages since I played a RPG. Now, due to the urgency of the story in the beginning, I feel the need to advance with it rapidly. Yet I somehow have accumulated at least 5 side quests that seem to distract me from my main quest. Is timing really an issue or can I just explore everything I want to?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7049596309661865
+  },
+  {
+    "seed": 42,
+    "text": "To fix it for this particular patch. In Steam, go to properties -> Betas -> 1.40.8.8 - 1.40.8.8. Then update your game and proceed as normal.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6098556518554688
+  },
+  {
+    "seed": 42,
+    "text": "As you've noticed, meditating lets you end the loop without waiting it out. This is useful when you no longer want to continue the loop, but can't or don't want to let your character die. It essentially works like dozing off next to a campfire, except that it can be done from anywhere and doesn't let you wake yourself up.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6253346800804138
+  },
+  {
+    "seed": 42,
+    "text": "To collect honey, you need to get a special jar from the questgiver by talking to her. Things to know, #1: The jar is valid within a limited quest area only; if you cross its border even a little, the jar and its contents disappear. Try to find the border first before losing honey. To fill the jar, you need to get up to the beehives, and \"use\"/frob them. Different hives give different amounts of honey; an status icon should appear with a number on it. Things to know, #2: The actual collection is only active during a specific quest phase \"Gather honey for the Kodan\", when a timer shows up. Outside that quest, you can still get the jar, do the jumping, but no honey is in the jar. So why can you get the jar when you can't effectively get honey? Officially, it's a bug. But if you go for some achievements, you need to activate/use/frob the hives, regardless of the honey. You can't do that without the jar. So this helps with the achievements, while frustrating players who don't know the special mechanics here. Depending on your other quests, a bee called Ms. Buzz can be found who asks you to give her the honey instead. If you do, she buzzes off and can be found in the \"Queen's Confidence\" location later. It's related to a different quest; no effect to the honey collection other than that. Now, the jumping puzzles can be quite taxing. There's a shortcut here, but it's kind of a spoiler: You can use the Jade Bot Glider Booster skill on \"6\" from EoD. Run up the hill a bit, jump downwards to glide, use booster to gain height. Booster takes 30 seconds to recharge.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7597451210021973
+  },
+  {
+    "seed": 42,
+    "text": "Is there a painless way to run Starcraft 2 on Linux? Now that Starcraft 2 is free to play, is there a painless way to run it in Linux? People have been doing it with different success for years, but the hacks are spead over different resources and often are distro specific. I have some specific limitations though. Since I saw file names like Starcraft64 on a Windows install of Starcraft 2, I would like to run it on a clean 64bit Linux distribution without the multilib 32bit compat layer installed. I am fine with either 64bit stable wine or the 64bit staging wine, no wrappers like PlayOnLinux or Lutris should be involved. Is it possible to install and run Starcraft 2 this way? So far I went to starcraft2.com website and downloaded the installer, but when I ran the file tool on it, I was told it is a 32bit Windows executable, so obviously it won't be able to run under pure 64 wine.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7006092071533203
+  },
+  {
+    "seed": 42,
+    "text": "Double-check whether you are digging at the right spot. Since version 1.3 , you have to collect secret note 16 before you can dig the treasure, but you should be able to dig at the spot without the note. Make sure that you dig at the right spot: Dig one space to the right of the large boulder north of the Railroad tracks in the top left corner. See",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7053439617156982
+  },
+  {
+    "seed": 42,
+    "text": "Finally got it, putting the info here in case someone has the same question down the line: I took a gang leader's quest (delivering weapons), then bought the necessary weapons. I tried to exort a nearby village, and they fought back, which drove my crime rating up to the point where the kingdom in question declared war on me. (You don't have to go through with the battle against the villagers; you can then cancel). I snuck back into the town (do not use a disguise, otherwise NPCs won't recognise you and you can't complete the quest - it has to be the 'sneak' option that has a chance of failure) and handed over the weapons. I then waited a bit but got captured by a patrol (can't wait inside settlements when you're officially an enemy) I waited some more in prison, eventually I was offered to pay for my freedom, and I took the offer... then the achievement popped. In the end, it feels to me like \"Getting captured and then buying your freedom\" is what counts as \"Completing a quest\", but I can't be entirely sure because I know this game sometimes takes a while to process some achievements, so it could be a coincidence.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6496356725692749
+  },
+  {
+    "seed": 42,
+    "text": "If you don't know who has each diamond Step one Give each player a unique scoreboard ID. See this related question for how to do that. Step two Run the following command in a repeating, always active command block: execute as @e[type=item,nbt={Item:{id:\"minecraft:diamond\"}}] run data merge entity @s {Item:{components:{\"minecraft:custom_data\":{Unclaimed:1b}}}} This gives each diamond item on the ground a custom Unclaimed tag, allowing you implement Step 3 without 30+ command blocks per player Step three Once for each player who could be playing the map, run in a repeating command block: clear @a[scores={Id=1}] diamond[custom_data={Unclaimed:1b}] 1 and then, in a conditional chain command block that the repeating command block is pointing to /give @a[scores={Id=1}] diamond[custom_data={PlayerOwns:1b}] Repeat this for each player, using scores={Id=2} and PlayerOwns:2b for the second player and so on. Step four Now that each diamond has a tag describing whose it is, you can use the technique described in In2itivity's answer to determine who put a diamond in the chest. This has a known bug that if Alice puts a diamond in a container, and then Bob takes the diamond out of the container (and never drops and picks it up again), the diamond is still interpreted as belonging to Alice -- but I actually like that if I understand what you're doing correctly; if you stole someone else's diamond from a chest instead of mining your own, that means you're trying to cheat\u2026 karma! If you want a more seamless experience, you may want to interest yourself in player inventory modification . With the method above, the diamond is visibly replaced by a different one, you can use this to make a seamless replacement.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7350088953971863
+  },
+  {
+    "seed": 42,
+    "text": "What was the first game to show toilets? And by \"toilets\" I mean the actual thing you sit on, not just \"restrooms\". Not trying to be weird; I just remember I first saw them in Fallout 3 (2008) and suddenly realized those fixtures had been underrepresented in video games. Which is understandable in the U.S., where most folks were uncomfortable with restroom stuff. But the Japanese are OK with it (e.g. this ), so I figure some of their old games must feature toilets.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7006901502609253
+  },
+  {
+    "seed": 42,
+    "text": "I'm almost certain from back when I played Plants vs Zombies that magnet shroom will target the zombie closest to your house (notice how zombies are never spawned in the exact same position, so there will never be a tie).",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3340051472187042
+  },
+  {
+    "seed": 42,
+    "text": "If you're in a winter/cold biome, you can abuse the fact that animals will path-find to available food. This only works in situations where food for wild animals is scarce. The general way you can use this is to create a small room near your killbox that contains some food, like corn. Complete the room with a roof and door, but force the door to stay open. This will protect the food from rotting, but also allows animals to path to it. If you put some type of trap between the animals and the food (I use beartraps in my killboxes), they'll hit the traps and get downed (ideally), or just bleed out. The downsides to this are if the animals make it to the food, they'll eat some of it, and it will also generally cause the area to be covered in blood. Here's an example:",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7766894698143005
+  },
+  {
+    "seed": 42,
+    "text": "Sounds like a job for the /team command once again . Teams have a bunch of useful features including push by collisions. You only need to run these commands once: team add no_push team modify no_push collisionRule never team join no_push <target passive mob> Any entity in this team, in particular the passive mob of interest, can never be pushed by anything else. However, it will still interact with leads, which is exactly what is wanted. Team options have a bunch of useful lesser known features, so I highly recommend looking at the /team wiki page You should also consider teleporting the enderman to the passive mob instead of the other way around, that way it will give you more control over the lead",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7538445591926575
+  },
+  {
+    "seed": 42,
+    "text": "How am I touching thorns without taking damage? I think I may have broken the game. The first case was when I was practicing the Path of Pain, and the second was when I was messing around by the 2nd floor White Palace bench. Can someone explain how this works?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6285932064056396
+  },
+  {
+    "seed": 42,
+    "text": "Don't know if this is still relevant but I've beat all games multiple times! The Swamp Castle treasury doorway solution is to gather mud from the base of the nearby water basin. Put the mud in the holes near the door. Then put a plank of wood in the doorway itself and poke the eyes of the painting. If you want any more help with puzzles I'm happy to answer them!",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5974600315093994
+  },
+  {
+    "seed": 42,
+    "text": "Note: Exercise caution when using any save editor, and always back up your saves. Improper edits may cause save file corruption . If you are willing to do some mild cheating and utilize a save editor, Tenna Editor is an option here. (it's only mild cheating here because we're merging 2 slots. If you haven't done the shadow crystal bosses before, please do not just cheat it in or I will be unhappy with you). Upload your save folder or your Nintendo Switch deltarune.sav file. Select the appropriate save (in this case, CH5 Slot 1 (Completion)) Then, in the \"story\" section for Chapters 3 and 4, set the relevant flags. These will be sorted under the relevant boss's name. If you really want to go the extra mile in merging things, you can compare the values for slot 3 as well. This way you can properly store, for instance, the number of attempts. Additionally, you may want to check for sword route flags, and add the shadow mantle to your armors, if you got the shadow mantle before obtaining the chapter 3 shadow crystal. Consider also adding BlackShard and JusticeAxe. To ensure that you have a file that can be tested for corruption, consider using the actual chapter 5 save instead of the completion save, since the completion save won't be loadable until chapter 6 releases. You will have to finish the chapter from the last save again, but this should be a fairly short segment. Once all this is done, export your saves to the appropriate format depending on the platform.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6836916208267212
+  },
+  {
+    "seed": 42,
+    "text": "In Portal 1, these are \"Advanced Knee Replacements\" In-universe, they appear to make the user invulnerable to fall damage. According to the Wiki , In Portal 1, Chell uses 'Advanced Knee Replacements', until the explosion resulting from her defeat of GLaDOS at the end of the game broke them. In Portal 2 , Chell replaces them with a similar device, the \"Long Fall Boot\", explained in detail in this Aperture Science \"Investment Opportunity\" demonstration video: This video is part of a series of videos that were created to promote Portal 2, showcasing various bits of technology in the Portal universe as if it were actually Aperture Science seeking investors for their research & development. Note that both Portal 1 and Portal 2 are set after Aperture Science's demise Thus both the Advanced Knee Replacements and the Long Fall Boots, must have been made prior to those events. The reason for the replacement comes from the development of Portal 2. According to Matt Charlesworth , one of the people who worked on the game, the team debated keeping or replacing the 'Advanced Knee Replacement' in Portal 2, before eventually settling on the \"Long Fall Boot\" as a variant of the same technology.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.4842965006828308
+  },
+  {
+    "seed": 42,
+    "text": "You can beat the game and get any ending variation you wish from the first loop. But there's two sections in the endgame that get easier if you're not on the first loop: Your Signalscope will only show frequencies that you've already unlocked by finding an object that emits that signal. Finding the Vessel usually requires you to either track down an object on radio, or have already found it and marked it on your map. Speedrunners bypass this by simply knowing where it is. The helpful pop-up reminding you of the Eye Coordinates will only appear if you've legitimately seen those coordinates on a previous loop. If you only know the coordinates from out-of-game knowledge, you won't get the reminder but they'll still work. Loop counters, not affected by your actions except the number of loops that pass: You can only sleep at a fire to pass the time after the start of the third loop. The equipment in the Probe Tracking Module will count the number of loops elapsed. According to it, the game starts on loop 9,318,054. The easter egg scroll on Giant's Deep shows a \"world line divergence\" that changes over the course of the loops. The first loop has some important differences until you activate the statue and begin the game proper. You mentioned minor dialogue changes and the possibility to get a game-over by dying, but it's more than that. Time-sensitive events don't happen at all until you trigger the statue. If you somehow get onto your ship and into space without triggering the statue, you'll find that Brittle Hollow doesn't collapse, sand never flows off Ash Twin, and there's no time limit on your exploration. The loop starts from the beginning when you walk past the statue - even if it was broad daylight before, afterwards it'll be midnight on the first day. You usually don't notice this because the museum is indoors.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7064648866653442
+  },
+  {
+    "seed": 42,
+    "text": "The other answers are correct for the base game, but assuming you have the Phantom Liberty expansion, there is one heavily-foreshadowed choice which has lasting consequences & no \"point of no return\" warning. That choice happens in the quest \"Firestarter\". It is not strictly a point of no return since you can still return to the rest of the open world, but some of the endings to Phantom Liberty becomes locked out. If you're interested in experiencing all the endings, make a manual save before the quest.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6435174942016602
+  },
+  {
+    "seed": 42,
+    "text": "I've been playing RDR Online for a few months and just got three businesses: the bounty hunter, the trader, and the moonshiner. It took a lot of grinding, but I wanted to get all three at once. In my personal opinion, the trader and moonshiner are most profitable with cash, but the bounty hunter is best with gold.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "help_request",
+    "confidence": 0.2904573380947113
+  },
+  {
+    "seed": 42,
+    "text": "Any and all Summoning, when using a password is restricted to that group, including hunters using the Blue Cipher Ring. The only thing that Passwords do not affect is Invasions. If you are using multiple Passwords, this will apply to all of them.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6375749707221985
+  },
+  {
+    "seed": 42,
+    "text": "If you want to use a set coordinate then you can use the x y z and the dz dy dz values to select an area. If you're making only one minigame in that world then you can use this command: /testfor @a[tag=tag_example] If you're making more than one minigame instance but the minigame is far away from the rest then you can use this command: /testfor @e[tag=tag_example,r=20] Where the r is the radius from where the command is run (and if your unsure then you can experiment to see how it works)",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7724897861480713
+  },
+  {
+    "seed": 42,
+    "text": "What's the origin of the term 'seed'? Seeds , in procedurally generated video games, are basically identifiers for the world that's generated. They're random strings or codes for specific worlds, and you can also sometimes input a seed into the game to play on the exact same world, with everything in the same place, that the seed is associated with. 1 What's the origin of the word 'seed' being used in this context? It's a pretty ubiquitous term, but it doesn't quite match its usage (at least for me), so I'd be interested to know how it came about. 1: At least as far as I understand it, which is probably apparently wrong.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6783310174942017
+  },
+  {
+    "seed": 42,
+    "text": "Short Answer: Enter the number \"747\" as the frequency to continue with the game. There is no way to find this information within the game (see full answer below). Full Answer: This is a question that one of my kids brought to me while playing the games that I grew up with, and - while you can find the following information on the internet - I thought it was worthy of documenting within Arqade. Interestingly, the method for getting the frequency has changed over the years. To be able to continue with the game requires knowledge of a 3-digit code that originally was included as a hidden message on a piece of paper that came with StarTropics when purchased new and unopened... 1990 Original NES Release From the original instruction manual: Notice the footnote in the bottom right corner: \"Please read the letter from Dr. Jones appended to this booklet.\" Here is an image of the paper that was appended to the back ( image credit ): The basic gist of the letter is that Uncle Steve is responding to Mike and inviting him to visit him on C-Island. I will emphasize the extra words in the footnote at the bottom: \"Note: This letter is very important so please hold onto it till the end of the game.\" As a kid, I remember thinking it was really cool to have this extra paper that was somehow important to the game. Now that we know about this physical letter, Baboo's cryptic message makes more sense. When the paper was made wet with water, a hidden message would appear ( image credit ): This was a real world component to a video game! Definitely a fun experience as a kid. Nowadays, you will likely buy the game used without the original packaging and manual - and crucial letter to Mike from Uncle Steve! The content of the secret message in the letter contributed to the whole secret spy feel: Uncle Steve felt as though he was being watched and took a precaution to put a \"tiny transmitter in [his] shoe\" which was tuned to the frequency of 747 MHz. 2008 Wii Virtual Console & 2016 Wii-U Virtual Console Releases When Nintendo released StarTropics for the Wii/Wii-U Virtual Console, they included an electronic version of the original letter in the Operations Guide, complete with a way to virtually \"dip\" the letter in water (by clicking on an image of a bucket of water) to reveal the necessary frequency: Here is a video of what it looked like to dip the letter on the Wii. (Thanks to @Showsni for the video link.) It is interesting to note that this virtual dipping only gave the minimum information to continue in the game (frequency 747 MHz), and did not include the hidden message from Uncle Steve revealing his (justified) paranoia and tiny transmitter. 2016 NES Classic Edition Release The NES Classic Edition release included two digital manuals, an \" Electronic Manual \" and a \" Printed Manual \". The \"Printed Manual\" included the image of the blank letter. The \"Electronic Manual\" included a page to explain the letter and give the secret frequency: This gave all the same information as the original printed paper, complete with the secret message communicating Uncle Steve's spy-level precautions. 2019 Nintendo Switch Online Release When the game was released for the Nintendo Switch Online, they apparently omitted any copy of the letter (virtual, digital, or otherwise). Oops! Players who don't have any context to where that frequency was supposed to come from are forced to search online and find this answer: As we have learned from the above, the frequency that Nav-Com should tune to is 747 MHz. Entering this number will allow you to continue the game of StarTropics past Chapter 4.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.449569433927536
+  },
+  {
+    "seed": 42,
+    "text": "The new outfits do NOT effect game play and stats. They are just for show to make your characters look stylish.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.35942500829696655
+  },
+  {
+    "seed": 42,
+    "text": "There is a simpler solution to this. You can use the so-called \"figure space\" when specifying the player name for their score. It gets rendered as a regular space while not being parsed as a regular space, unlike other invisible characters (like the no-break space or the en space, for example). You can copy it from here: The Unicode is U+2007 . There may be other invisible characters that would work too but I haven't investigated much further. Hope this still helps someone after 6 years :)",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7043164968490601
+  },
+  {
+    "seed": 42,
+    "text": "Why do my cards suddenly look worn out? I recently started playing Magic Arena, and when I booted the game up this evening I noticed my cards all looked completely differently. Specifically, they all look \"worn out\" with a bunch of wear and tear. The below screenshot explains better than text: I'm assuming I did something to trigger this change, but I can't figure out what I did and how to reverse it. Why do my cards suddenly look worn out, and how can I reverse this?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6803267002105713
+  },
+  {
+    "seed": 42,
+    "text": "Grow big enough. You need to make a circle around them. You need to make round circles by sliding your body. Each circle will be smaller than the last one because your tail will go to the center. You don't need to take dangerous actions. In case the opponent's head is far away from you, you may cut the inner space.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6968709826469421
+  },
+  {
+    "seed": 42,
+    "text": "Nintendo has documented that yes, the original Switch Joy Cons will be able to wirelessly connect to the Switch 2: Can be used by pairing wirelessly to Nintendo Switch 2. Cannot be attached to Nintendo Switch 2. A Nintendo Switch console or compatible accessory such as a Joy-Con charging grip or Joy-Con charging stand (two-way) is required for charging.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.38282540440559387
+  },
+  {
+    "seed": 42,
+    "text": "Why is fast travel only available intermittently in Disco Elysium? Sometimes, when I open the map in the journal, I am given the option to fast travel to another area, but most of the time it does not present the option. Any explanation why it is only available some of the time? I can't find any pattern.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6357449293136597
+  },
+  {
+    "seed": 42,
+    "text": "This is the timeline of the games as we currently understand it \u2020 , according to official and unofficial sources : Main Timeline Skyward Sword (\"Many years\" later + 100 years) The Minish Cap (\"Generations\" later) Four Swords (After the Hylian civil war that lasted \"a long time\") Ocarina of Time / | \\ Fallen Hero Timeline Child Timeline Adult Timeline (\"Many years\" later) A Link to the Past (Several months later) Majora's Mask (\"Ages\" + hundreds of years later) The Wind Waker (Soon after) Link's Awakening (\"Many years\" later) Twilight Princess (Soon after) Phantom Hourglass (Soon after) Oracle of Seasons/Ages (Hundreds of years later) Four Swords Adventures (One hundred years later) Spirit Tracks (Centuries later) A Link Between Worlds | | (Soon after) Triforce Heroes | | (An unknown amount of time later) Echoes of Wisdom * | | (\"Many years\" later) The Legend of Zelda | | (Six years later) The Adventure of Link | | (?)** (?)** (?)** Era of the Wilds/Great Calamity (Possibly more than 10,000 years later) Breath of the Wild * (Soon after) Tears of the Kingdom * The most confusing part is the timeline split after the events of Ocarina of Time . The quick explanation is that the Fallen Hero Timeline is the timeline where Link fails his quest and Ganon ends up with the completed Triforce, forcing the Sages to seal it and him within the Sacred Realm, which is now the Dark World. The Child Timeline is where Link successfully defeats Ganon and goes back in time as a child (i.e., the final scene of Ocarina of Time ). He warns Zelda about Ganondorf's betrayal and they prevent him from ever stealing the Triforce in the first place, though he survives his execution due to the gods giving him the Triforce of Power anyway ( for some reason ). The Adult Timeline stays in the future timeline after Link defeats Ganon. Because Link went back in time (to the Child Timeline), this timeline no longer has its Hero. So the next time Ganon appears, the gods are forced to intervene, resulting in the global flood. * : These games were released after the most recent official chronology update, so their place in the chronology is inferred from the in-game lore and might not be correct or might be retconned in the future. ** : It has been loosely confirmed that Breath of the Wild and Tears of the Kingdom take place at the end of one of the timelines, but which timeline specifically has apparently been left up to the imagination of the player . \u2020: It is worth mentioning that according to The Legend of Zelda: Encyclopedia , the chronology of the Zelda games is not a high priority for Nintendo. They will maintain the timeline if practical, but they are also not afraid of breaking it for the sake of telling the story they want to tell for a specific game, and that ultimately the intention was always for the players themselves to create their own chronology according to their imagination. (Even the Encyclopedia itself states in its foreword that it was written with a certain amount of creative license to fill in some gaps.) So while the official timeline exists for the sake of convenience, it shouldn't be seen as an absolute truth.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.4435865581035614
+  },
+  {
+    "seed": 42,
+    "text": "Well, back in the day, there was Nintendo Power , which was were it was at for all the incites. Other than that, just launch 2 player with no second player and experiment with the controller.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.35020798444747925
+  },
+  {
+    "seed": 42,
+    "text": "Quake 3: Ray Traced (Q3RT) was released in 2004 by Daniel Pohl using the OpenRT library to demonstrate real-time ray tracing, but was mostly a research project. Demo: Retrospective research paper by the same author: Title: 15 Years Later: A Historic Look Back at \"Quake 3: Ray Traced\" Daniel Pohl, Selvakumar Panneer, Deepak Vembar, Carl Marshall . DOI: http://dx.doi.org/10.15439/2020F3 Citation: Proceedings of the 2020 Federated Conference on Computer Science and Information Systems, M. Ganzha, L. Maciaszek, M. Paprzycki (eds). ACSIS, Vol. 21, pages 401\u2013412 (2020) Abstract: Real-time ray tracing has been a goal and a challenge in the graphics field for many decades. With recent advances in the hardware and software domains, this is becoming a reality today. In this work, we describe how we got to this point by taking a look back at one of the first fully ray traced games: Quake 3: Ray Traced . We provide insight into the development steps of the project with unreleased internal details and images. From a historical perspective, we look at the challenges pioneering in this area in the year 2004 and highlight the learnings in implementing the system, many of which are relevant today. We start by going from a blank screen to the full ray traced gaming experience with dynamic animations, lighting, rendered special effects and a simplistic implementation of the gameplay with basic AI enemies. We describe the challenges encountered with aliasing and the methods used to alleviate it. Lastly, we describe for the first time the unofficial continuation of the project, code named Quake 3: Team Arena Ray Traced , and provide an overview of the changes over the past 15 years that made it possible to generate fully ray-traced interactive gaming experiences with mass market hardware and an open software stack.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.4271186292171478
+  },
+  {
+    "seed": 42,
+    "text": "First off: Don't panic! Your virtual cards will not lose value from wear, as they do not actually exist. Second: As per a bunch of other users posting similar stories on the MTG: Arena subreddit , I think this can answered as: \"April Fools!\"",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.46251899003982544
+  },
+  {
+    "seed": 42,
+    "text": "No, it's not necessary: I left a Kingmaker character \"Active\" while I was offline and they were slain in my absence! A more official Answer with technical details rather than anecdotal ones would be very interesting",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.32857099175453186
+  },
+  {
+    "seed": 42,
+    "text": "Which video game had the first \"summon supporter\" mechanic? (Summoning a \"sub character\" to fight) Which video game had the first \"summon supporter\" mechanic? (Summoning a \"sub character\" to fight) This question was directly caused by Nintendo filing a patent to support their lawsuit against Palworld . It strikes me as quite generalised, so I wondered whether there really was no \"summon mob\" mechanic in this sense before Pok\u00e9mon Red/Green release in February of 1996, which could be used to argue against this patent. To clarify: any summoning NPC that fights for you counts. Whether it's a named and specified character or a featureless blob.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6355617642402649
+  },
+  {
+    "seed": 42,
+    "text": "First, \"Run Game\" to make sure the game is loaded into the iframe and the data is available in the browser. Open browser dev tools on the webpage with the game ( Ctrl/Cmd + Shift + i , F12 , right click -> Inspect). Chrome: \"content overrides\" must be enabled in the dev tools settings ( F1 or Shift + ? while focused in dev tools window), under Preferences -> Persistence header -> Enable local overrides . Disable this after using. In dev tools go to: Chrome: Sources -> Page tab on top left -> drill down: top -> index.html -> html-classic.itch.zone -> html/12787019 -> js -> right click rmmz_managers.js -> select Override content -> select folder to store custom local version of file -> press Allow in popup at top of browser. Firefox: Debugger -> Sources tab on top left -> drill down https://html-classic.itch.zone/html/12787019/index.html -> html-classic.itch.zone -> html/12787019/js -> right click rmmz_managers.js -> Add script override -> select folder to store custom local version of file. Edit the local copy of rmmz_managers.js following below. Overriding loadObject will cause it to log when starting the game, which will require restarting the game to get additional logs. Overriding saveObject will instead cause it to log when saving. loadObject StorageManager.loadObject = function(saveName) { return this.loadZip(saveName) .then(zip => this.zipToJson(zip)) .then(json => { console.log(saveName, json) return this.jsonToObject(json) }) }; saveObject StorageManager.saveObject = function(saveName, object) { return this.objectToJson(object) .then(json => { console.log(saveName, json) return this.jsonToZip(json) }) .then(zip => this.saveZip(saveName, zip)); }; Now, reload the page with the game and press \"Run Game\" again to cause the browser to load the override, and go to the Console tab in browser dev tools. After loading or saving, as chosen, it will log the name of the file + the save data to the Console where you can highlight and copy it (or just press Copy if it's a lot of data, like the file N saves), then paste that in a file somewhere you'll remember like your desktop with a proper name so you know which of the 3+ files it is ( config , global , file0 - autosave, file1 ... fileN - manual save). Go to save-editor.com and one by one upload each JSON file and use the \"File Encoder\" option of the site to convert it to a .rmmzsave file and then manually download it. Finally, go to the folder containing the offline/PC version of the game (and make sure the game is not running - didn't test with it running, but to be safe), go into the save folder, then delete/move/backup existing data if desired and move the newly-converted save data in, start the game, and if done properly the save data will show up when you press \"Continue\". If not done properly it will just ignore the save files and there will be nothing to continue from. This would also occur if the online version vs offline version don't match, as RPGMaker does check the engine versions when it first starts. RPGMaker Save Editor is an Electron app which can do this locally. Not very pretty, but it seems to be functional. I don't plan to maintain it, but have updated the app to the latest Electron and submitted it to the author.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6579388976097107
+  },
+  {
+    "seed": 42,
+    "text": "You unlock this after the 2nd quest (where you rescue the Support team from a Quematrice). Once you get back to base camp, Y'sai gives you a gift -- use of a Seikret with a new saddle and a holster for a secondary weapon. After this, you can equip the secondary weapon anytime you can change your equipment.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6805269718170166
+  },
+  {
+    "seed": 42,
+    "text": "It's complicated, and I have not developed a complete understanding of it in my trip down this rabbit hole, but I would like to document what I have learned in this answer. First, it's good to understand more precisely what the question is about. When you hover a game on the main store page, you get a little info card about the game: What do those icons mean? Looking at the HTML gives us the file names of those icons: ico_singlePlayer.png , ico_multiPlayer.png and ico_coop.png . If you look at the store page for a game, there is an info section for the game that features those same icons (this one being from Project Zomboid as well): But as you can see, while the info section use the same icons, it does not have a matching number of them, meaning the hover list is not simply a reproduction of the info section. The mystery deepens further when you realise some games show the multiplayer icon without having an info section entry using it (example: Fast Food Simulator), and others show the Co-op icon without a Co-op entry (example: Hearts of Iron IV). The latter one provided a clue. How is Hearts of Iron IV associated with Co-op? The answer turns out to be that Co-op is one of the popular user defined tags for it: This is the only thing relating to Co-op I can find on that game's store page, leading me to believe that the extra icons correspond to tags. Annoyingly the tags don't show these icons, so exactly which tags are associated with which icons is a detail buried in Steam's code base. Cutting out the gory details of all the games I looked at to piece this together, my current model is that this sequence of icons will be, in order: A single player icon, if the game features a single player mode A multiplayer icon, if the game features any form of multiplayer A sequence of zero or more multiplayer icons corresponding to tags and info section entries A sequence of zero or more co-op icons corresponding to tags and info section entries A multiplayer icon, if the game features cross platform multiplayer Points of unclarity being which tags are relevant, and whether there are any other obscure factors that could stick an icon somewhere in the sequence. But this matches all of the games I've looked at, at least. Useful information you can get from looking at this seems to be If it has a single player mode If it has a multiplayer mode If it has co-op If there is more than one multiplayer icon before the co-op section, it seems to feature some sort of non co-op multiplayer If there is a multiplayer icon after the co-op section, it has cross platform multiplayer",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.47416889667510986
+  },
+  {
+    "seed": 42,
+    "text": "To pair your controller with a second Puck or Steam Machine and use it as a second device, you need to ensure that your controller is turned on in its second pairing slot. When turning on your controller, hold down L1 + A and then (while the other buttons are still held) press Steam , to go into its second pairing slot (this appears to be the information the Steam help page is missing). Your controller will make a different to normal noise when it turns on; the different noises are meant to help denote what device the controller is going to attempt to pair to. Then follow the pairing instructions in the question. The controller will now pair to the device and use the Puck/Steam Machine as the 2nd device. You can then see the 2 paired devices in your Steam Settings, under Controller, while the Controller is turned on: In the future, you should hold the relevant buttons when turning on the controller to connect to the correct device. R1 + A , Steam to connect to your primary device (the Steam Machine in this example), and L1 + A , Steam for the secondary (the Puck attached to the PC in this example). The controller will, however, remember what pairing slot it was last in if you simply turn it on with the Steam button. So, if you were last using your controller with your Puck, turning it on with the Steam button will mean it'll attempt to pair to the second device (the Puck). Again, the noise the controller makes will help you identify what device it will try to pair to. You need to turn the controller off (hold the Steam button), and and turn it back on with the correct button combination to change pairing slot. Note, you can also use R1 + B , Steam to enable Bluetooth pairing. Of course, pairing with Bluetooth doesn't follow the above instructions as this doesn't use a Puck.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7658825516700745
+  },
+  {
+    "seed": 42,
+    "text": "Leather Goddesses of Phobos was a text adventure released by Infocom in 1986 and included a content warning: Some material in this story may not be suitable for children, especially the parts involving sex, which no one should know anything about until reaching the age of eighteen (twenty-one in certain states). This story is also unsuitable for censors, members of the Moral Majority, and anyone else who thinks that sex is dirty rather than fun. The attitudes expressed and language used in this story are representative only of the views of the author, and in no way represent the views of Infocom Inc. or its employees, many of whom are children, censors, and members of the Moral Majority. (But very few of whom, based on last year's Christmas Party, think that sex is dirty.) By now, all the folks who might be offended by LEATHER GODDESSES OF PHOBOS have whipped their disk out of their drive and, evidence in hand, are indignantly huffing toward their dealer, their lawyer, or their favorite repression-oriented politico. So... Hit the RETURN/ENTER key to begin!",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.46339550614356995
+  },
+  {
+    "seed": 7,
+    "text": "First, disable the datapack or mod. Then, go into to the world save, and replace the level.dat and the level.dat_old with the level.dat and level.dat_old from a newly generated world. After that, you will be able to play in the exact same world and there will be no new Terralith chunks!",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6699110865592957
+  },
+  {
+    "seed": 7,
+    "text": "Using different BIL (windbomb) methods is mostly preference, but there are some benefits to using each. The square bomb has a flatter surface area, thus giving you more room for error. The round bomb has a rounded surface area which means you need to hit it more directly into link. For this reason, most people use the round bomb first so as to impact the square bomb into link. The square bomb is used first in some setups with the main one being off the ground, such as the backflip setup, in which you use a stump/elevated surface to get bullet time from a backflip towards the square bomb, pulling out the circle bomb midair and detonating the square, with a consistent circle bomb impact into you. People who learn the stump method first will often use the square bomb first as it feels more natural, or use the square first as their tutorial did so. I also believe that square first can be better for vertical gliding BILs as you will have a better diagonal than the square's corner, because every direction from the circle is equal, you can go up or down further. Using the circle first is much easier for ledge and spider BILs, and I will recommend that you start using it first. I would say for learning BIL, you will want to start with the spider, then ledge, followed by horizontal gliding BIL. The vertical gliding BIL you learn when you have higher stamina and you have the stamina to chain a vertical gliding into a horizontal gliding, just to be able to get anywhere faster, scale cliffs, or just glide longer.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6418279409408569
+  },
+  {
+    "seed": 7,
+    "text": "How to holster a weapon in Cyberpunk 2077? I want to holster a weapon in order to not run around like a maniac. How do I holster my weapon or hold down my hands?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6160780191421509
+  },
+  {
+    "seed": 7,
+    "text": "Clay is more sparsely found on islands, specifically on or near beaches. It has a grey color and is located in fairly large patches on the ground in the sand or just beyond in the grass. You need a pickaxe to harvest it, a basic stone pickaxe is sufficient.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3036101460456848
+  },
+  {
+    "seed": 7,
+    "text": "Currently, no. This functionality is available only on Steam and Console versions of Balatro. PlayStack have seen this feedback and logged it , but there doesn't appear to be any current public plans to implement this on mobile.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.33013439178466797
+  },
+  {
+    "seed": 7,
+    "text": "Gachas are characterized by the fundamental way some, or all, of gameplay is gated: by a lootbox-adjacent mechanic. The difference between gachas and, say, Counter-Strike 2's lootboxes is that you may play all of what Counter-Strike 2 has to offer without ever opening a box, and not in a \"technically, if you grind for 234 hours, you will be able to afford [weapon] for free\" kind of way. The only things that are locked behind a loot box (however expensive it is to open) in Counter-Strike 2 are entirely cosmetic. For contrast, take the quintessential \"gacha game\": Genshin Impact. In Genshin Impact, to be able to play in a certain way, such as playing as a certain character, or using a certain weapon, the only way is to open a loot box. You may not buy the character from the shop directly. The only way to get what you want is to gamble. Sure, there are ways of gambling for free built into the game (this is a player retention mechanic, gachas are necessarly full of them otherwise they'd be extremely frustrating), but the fundamentals don't change: in order to experience the full game, or indeed any of the game at all, you must gamble. Some would argue that the entire purpose of the game is the gambling. Dragon Collection, one of the original gachas, was actually literally just a collection game with no gameplay attached. The entire point was to gamble to get the dragon you're missing from your collection. It was quite successful for a browser game of the era. Of course, this is a spectrum. Some games can be located somewhere in the middle, where most of the gameplay can genuinely be accessed for free, but the truly powerful elements are behind a lootbox wall. Also note that gacha games are not to be confused with so-called \"freemium\" games, where the game favors paid players much more than free-to-play ones. While the two are obviously related, the difference mostly comes down to the fact that freemium games almost always guarantee you will obtain something powerful by paying every time, while gachas hold no such guarantees and can very well reward you with \"filler\" items even after paying. In conclusion, gachas are defined not by \"some amount of randomness in terms of player rewards\", but large amounts of randomness in access to gameplay to begin with.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.46941491961479187
+  },
+  {
+    "seed": 7,
+    "text": "First, \"Run Game\" to make sure the game is loaded into the iframe and the data is available in the browser. Open browser dev tools on the webpage with the game ( Ctrl/Cmd + Shift + i , F12 , right click -> Inspect). Chrome: \"content overrides\" must be enabled in the dev tools settings ( F1 or Shift + ? while focused in dev tools window), under Preferences -> Persistence header -> Enable local overrides . Disable this after using. In dev tools go to: Chrome: Sources -> Page tab on top left -> drill down: top -> index.html -> html-classic.itch.zone -> html/12787019 -> js -> right click rmmz_managers.js -> select Override content -> select folder to store custom local version of file -> press Allow in popup at top of browser. Firefox: Debugger -> Sources tab on top left -> drill down https://html-classic.itch.zone/html/12787019/index.html -> html-classic.itch.zone -> html/12787019/js -> right click rmmz_managers.js -> Add script override -> select folder to store custom local version of file. Edit the local copy of rmmz_managers.js following below. Overriding loadObject will cause it to log when starting the game, which will require restarting the game to get additional logs. Overriding saveObject will instead cause it to log when saving. loadObject StorageManager.loadObject = function(saveName) { return this.loadZip(saveName) .then(zip => this.zipToJson(zip)) .then(json => { console.log(saveName, json) return this.jsonToObject(json) }) }; saveObject StorageManager.saveObject = function(saveName, object) { return this.objectToJson(object) .then(json => { console.log(saveName, json) return this.jsonToZip(json) }) .then(zip => this.saveZip(saveName, zip)); }; Now, reload the page with the game and press \"Run Game\" again to cause the browser to load the override, and go to the Console tab in browser dev tools. After loading or saving, as chosen, it will log the name of the file + the save data to the Console where you can highlight and copy it (or just press Copy if it's a lot of data, like the file N saves), then paste that in a file somewhere you'll remember like your desktop with a proper name so you know which of the 3+ files it is ( config , global , file0 - autosave, file1 ... fileN - manual save). Go to save-editor.com and one by one upload each JSON file and use the \"File Encoder\" option of the site to convert it to a .rmmzsave file and then manually download it. Finally, go to the folder containing the offline/PC version of the game (and make sure the game is not running - didn't test with it running, but to be safe), go into the save folder, then delete/move/backup existing data if desired and move the newly-converted save data in, start the game, and if done properly the save data will show up when you press \"Continue\". If not done properly it will just ignore the save files and there will be nothing to continue from. This would also occur if the online version vs offline version don't match, as RPGMaker does check the engine versions when it first starts. RPGMaker Save Editor is an Electron app which can do this locally. Not very pretty, but it seems to be functional. I don't plan to maintain it, but have updated the app to the latest Electron and submitted it to the author.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7464652061462402
+  },
+  {
+    "seed": 7,
+    "text": "Core Game Gigs Concrete Cage Trap (Watson/Regina): in Tiny Mike's apartment, you can find Hypercritical (unique power precision); Mike will point it out after you give him the inhaler, but it can be picked up before doing so Phantom Liberty Gigs Heaviest of Hearts: Crimestopper (Kappa - smart pistol) is found in a bag in VIP room 06 of the Heavy Hearts club Roads to Redemption: Hecules 3AX (unique smart AR) can be found in the shooting range / warehouse portion of the rehab center Spy in the Jungle: Boris Ribakov drops Pizdets (HA-7 Warden - smart SMG) Additionally, after completing Spy in the Jungle, Kappa x-MOD2 (Kappa - smart pistol) can be found in a small building west of the spa/resort behind a door that requires a Body check to open Treating Symptoms: the elite robot R Mk.2 drops Ogou (A-22B Chao - smart pistol) Waiting for Dodger: Volkodav (machete - blade) can be found in a chest on top of a crate in one corner of the police station, and Dodger drops Rosco (Overture - power revolver) Core Game NCPD Hustles Note that all of these give crafting specs for iconics, not the iconics themselves. Do not look in your inventory for the weapon; you need to craft it. Organized Crime Activity (Watson - Northside): the named boss of this hustle (Tom Ayer - Maelstrom) should drop the crafting spec for Psalm 11:6 (D5 Copperhead - power AR); note that there have been reports of this one being bugged and not dropping Organized Crime Activity (Watson - Northside): the named boss of this hustle (Yelena Sidorova - Scavs) should drop the crafting spec for Buzzsaw (DS1 Pulsar - power SMG) Organized Crime Activity (Westbrook - Japantown): the named boss of this hustle (Shinobu Imai - Tyger Claws) should drop the crafting spec for Sovereign (DB-4 Igla - power shotgun) Organized Crime Activity (Westbrook - North Oak): the named boss of this hustle, a Militech Minotaur robot, should drop the crafting spec for The Headsman (M2038 Tactician - power shotgun) Organized Crime Activity (Heywood - Wellsprings): (one of) the named boss of this hustle (Denzel Cryer - Animals) should drop the crafting spec for Yinglong (G-58 Dian - smart SMG) Organized Crime Activity (Santo Domingo - Arroyo): the named boss of this hustle (Darius Miles - 6th Street) should drop the crafting spec for Comrade's Hammer (RT-46 Burya - tech revolver) Organized Crime Activity (Santo Domingo - Rancho Coronado): the named boss of this hustle (Olga Elisabeth Longmead - 6th Street) should drop the crafting spec for Breakthrough (Nekomata - tech sniper) Organized Crime Activity (Pacifica - West Wind Estate): the named boss of this hustle (Anton Kolev - Scavs) should drop the crafting spec for Moron Labe (M251s Ajax - power AR) Phantom Liberty NCPD Hustles Increased Criminal Activity - BARGHEST: Ross Ulmer drops a key to the gated area where you can find Raiju (Senkoh LX - tech SMG) Increased Criminal Activity - Scavengers: the Arasaka drone has the key to the gated area where you can find Sparky (SPT32 Grad - power sniper) Increased Criminal Activity - Voodoo Boys: Ayo Zarin drops Agaou (tomahawk - axe)",
+    "true_label": "guide_or_solution",
+    "predicted_label": "supported_claim",
+    "confidence": 0.407938688993454
+  },
+  {
+    "seed": 7,
+    "text": "As of 2026-06-09 TL;DR The cheapest way to play all (main) Zelda games is to buy the following consoles: Switch (most Zelda games) NGC (for Four Swords Adventure , The Wind Waker , and Twilight Princess ) 3DS / 2DS (for Phantom Hourglass , Spirit Tracks , A Link Between Worlds , and Tri Force Heroes ) Or if you prefer buying newer consoles: Switch 2 (as alternative to the Switch) Wii (as alternative to the NGC) New 3DS / 2DS (as alternative to the 3DS/2DS) If you want to play the most modern version of each game, you may also want a Wii U for The Wind Waker HD and Twilight Princess HD . Keep the following compatibility chart in mind (games from consoles on the left can be played on consoles on the right): original +1 +2 +3 GB SNES 1 GB GBC GBA NGC 2 GBA NDS 3 NDS/DSi 3DS/2DS New 3DS/2DS NGC Wii Wii Wii U Switch Switch 2 1 : with Super Game Boy 2 : with Game Boy Player 3 : The DSi lacks a GBA cartridge port and therefore cannot play GBA games. In addition, Link's Awakening DX (GBC) can run on GB and SNES 1 . This does not apply to Oracle of Ages/Seasons , however. Legend: Bold games can only be played on one system (or backwards compatible ones). They have not been ported to another console, and a remaster or remake does not exist. Examples: Phantom Hourglass (NDS/DSi) Spirit Tracks (NDS/DSi) Italic games can only be played on one system (or backwards compatible ones), but a different version exists on another console, such as a remake or original version. Examples: Link's Awakening (GB), has an expanded version in Link's Awakening DX Link's Awakening (Switch), is a remake of Link's Awakening DX Switch 2 Physical/Digital Ocarina of Time (Remake, releasing 2026-11-05) Gamecube\u2122 \u2013 Nintendo Switch Online (+ Expansion Pack) The Wind Waker Switch Physical/Digital Echoes of Wisdom Tears of the Kingdom Breath of the Wild Skyward Sword HD (Remaster) Link's Awakening (2019 Remake) Nintendo Entertainment System\u2122 - Nintendo Switch Online Zelda II - The Adventure of Link The Legend of Zelda Super Nintendo Entertainment System\u2122 - Nintendo Switch Online A Link to the Past Game Boy\u2122 - Nintendo Switch Online Oracle of Ages Oracle of Seasons Link's Awakening DX Nintendo 64\u2122 \u2013 Nintendo Switch Online (+ Expansion Pack) Majora's Mask Ocarina of Time Game Boy Advance\u2122 \u2013 Nintendo Switch Online (+ Expansion Pack) The Minish Cap Four Swords Wii U Physical/Digital Breath of the Wild Twilight Princess HD (Remaster) The Wind Waker HD (Remake) Wii Digital Skyward Sword Virtual Console (Digital only) Majora's Mask (N64) Ocarina of Time (N64) Spirit Tracks (NDS) Phantom Hourglass (NDS) The Minish Cap (GBA) A Link to the Past (SNES) Zelda II - The Adventure of Link (NES) The Legend of Zelda (NES) (New) 3DS/2DS Physical/Digital Tri Force Heroes A Link Between Worlds Majora's Mask 3D (Remake) Ocarina of Time 3D (Remake) Virtual Console (Digital only) Oracle of Ages (GBC) Oracle of Seasons (GBC) Link's Awakening DX (GBC) A Link to the Past (SNES; only on New 3DS) Zelda II - The Adventure of Link (NES) The Legend of Zelda (NES) Wii Skyward Sword Twilight Princess NDS/DSi (Nintendo DS/DSi) Spirit Tracks Phantom Hourglass NGC (Nintendo GameCube) Twilight Princess Four Swords Adventure The Wind Waker Majora's Mask (Emulated; part of bundle or promotion) Ocarina of Time Master Quest (Port of N64 original + new challenges; part of bundle or promotion) Zelda II - The Adventure of Link (Part of bundle) The Legend of Zelda (Part of bundle) GBA (Game Boy Advance) The Minish Cap A Link to the Past & Four Swords (Port of SNES original + multiplayer) N64 (Nintendo 64) Majora's Mask Ocarina of Time GBC (Game Boy Color) Oracle of Ages Oracle of Seasons Link's Awakening DX (Color remake of GB original) SNES (Super Nintendo Entertainment System) A Link to the Past GB (Game Boy) Link's Awakening NES (Nintendo Entertainment System) Zelda II - The Adventure of Link The Legend of Zelda No longer available Four Swords Anniversary Edition (DSi; remaster) Not included in this list The various spinoffs, such as Hyrule Warriors, Link's Crossbow Training, etc.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.468082457780838
+  },
+  {
+    "seed": 7,
+    "text": "After some testing, I can confirm that unequipping gear doesn't make you quieter, regardless of what gear it is or whether or not you have Sheika Armor equipped. Methodology So I first equipped a lizal shield, iron sledgehammer, and a knight\u2019s bow, along with the climber\u2019s bandanna and Zora gear, ran around for a bit, screenshotted the sound meter thingy, then repeated this but without the shield, sledgehammer, and bow. In both cases, the sound meter was identical. I also did this with Sheika gear and the same bow, sledgehammer, and shield, and in both cases the sound meter was the same as well.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.42657485604286194
+  },
+  {
+    "seed": 7,
+    "text": "The phrase must be Klaatu barada nikto , originally from The Day the Earth Stood Still , and, according to some of Wikipedia's sources, known as one of the most famous phrases in science fiction. Thus, \"Clatu\", \"veratus\", and \"nicktoo\". Soulblighter probably took it from the film Army of Darkness : Debipriyaa Dutta in this SlashFilm article explains that in that film Bruce Campbell's Ash ... messes up the phrase \"Klaatu Barada Nikto\" after confidently claiming that he's committed it to memory.",
+    "true_label": "supported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.297666996717453
+  },
+  {
+    "seed": 7,
+    "text": "Does the Archivist actually delete my file if its card dies? During my fight with the The Archivist, they asked me to to select the oldest file saved on my computer. The Archivist turned my file into a card and said it would be deleted if the card died. I won the fight without my card dying, so I never found out: Would The Archivist have actually deleted my file if the card was destroyed?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6743945479393005
+  },
+  {
+    "seed": 7,
+    "text": "Nick Valentine can tinker with the screws on his hand if he has a screwdriver in his inventory.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.42540624737739563
+  },
+  {
+    "seed": 7,
+    "text": "I am wondering why. Consistency. Having the same options for all kinds of pops, even if there is no additional benefit in one case, makes the game simpler. It also lets players roleplay largesse.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.35594412684440613
+  },
+  {
+    "seed": 7,
+    "text": "Let c = 0.000013 (Human, Beaver, Frog), or c = 0.0000195 (Harpy, Lizard, Fox, Bat). Then for each species i: if(r[i] >= t[i]): dr_dt += 0.7 * c[i] * p[i] * r[i] else dr_dt = 0 Here: dr_dt : Change in reputation from resolve per second r[i] : Current resolve of species i. p[i] : Current population of species i. c[i] : Constant associated with each species as above. t[i] : Current resolve target for species i. Example: I have 6 happy beavers at 32 resolve and 8 happy harpies at 20 resolve. There are 6 content humans at 5 resolve. How long will it take me to gain one point? Harpies: 8 \u00d7 20 \u00d7 0.0000195 \u00d7 0.7 \u00d7 60 = 0.002184 Beavers: 6 \u00d7 32 \u00d7 0.000013 \u00d7 0.7 \u00d7 60 = 0.0017472 Total: 0.0039312 per second. One point takes 254.4 seconds, or 4 minutes 14.4 seconds.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6937258839607239
+  },
+  {
+    "seed": 7,
+    "text": "How can I compact my Scrap Mechanic logic down? Is there a way for me to more easily compact my logic? For example, Here I have this start to a 64bit ALU: I have no idea how I could just turn this into a 64-wide prism, but so often when you see complicated logic on the workshop, that is how it comes. A glass-enclosed cube. How do people make these? Note: If anyone reading this question knows a Scrap Mechanic logical engineer, share this question with them! Thank you.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6722605228424072
+  },
+  {
+    "seed": 7,
+    "text": "At the time this question was asked, the answer would have been affected by even more randomness, because there used to be a random tick delay after mining most ores which was removed on December 7th 2022 . Official messaging indicating that: Get your Pickaxes at the ready, because we\u2019ve removed the delay after Mining Copper, Tin, Coal, Blurite, Silver, Volcanic Ash, Gem Rocks, Gold, Mithril, Lovakite, Adamantite, Clay, Salts, Runite and Amethyst. Phew, we can take a breath now. First, the factors affecting your chance to obtain ore from mining are as you noted, with one addition: Pickaxe material, which determines how many ticks there are between rolls to obtain an ore Mining level, which determines what ores you can mine and the odds of obtaining an ore when rolling. Note that any bonuses to mining level such as the hidden Mining Guild boost will increase your odds of obtaining an ore based on your effective level, but not allow you to mine new ores. Ore being mined, which also determines the odds of obtaining ore when rolling. Mining enhancers , which can add a chance to obtain an extra ore when rolling, among some other effects that do not directly impact ore rates. With these factors in mind, here's my stab at an actual formula for ores per hour. First, variables, constants, and their sources: There are 0.6 seconds per game tick : The game tick, also known as the server cycle, is the fundamental unit of time used in Old School RuneScape, equal to 0.6 seconds. All actions that require server processing are governed by this value. Each pickaxe rolls to obtain ore from a rock every n ticks, where n is determined by the specific pickaxe being used . Note that the Dragon, Infernal, 3rd Age, and Crystal pickaxes actually have a chance to take one fewer tick, but we'll use the average as the wiki does. Better picks do not increase mining odds, only frequency. Higher-level pickaxes grant more frequent opportunities to obtain an ore from a rock but do not impact the success rate of doing so. 3 ticks by default, 1/6 chance to be 2 ticks [for the Dragon, Infernal, and 3rd Age pickaxes]. 3 ticks by default, 1/4 chance to be 2 ticks [for the Crystal pickaxe]. And there is a certain chance to obtain an ore per roll, which depends on the mined ore and your mining level. For simplicity, we'll assume that this percentage of rolls will yield an ore. Unfortunately for our purpose, while there are formulas for each rock type that determine your percent chance to obtain an ore on each roll, these formulas are not publicly known! Some have been derived and posted on the wiki , but all of them seem to be unrelated to one another. For example, your odds of obtaining Silver ore each roll at level 20 is 60/256 (23.44%), and 199/256 (77.73%) at level 99, with increases in those odds at every level. However, for Runite, your odds are 17/256 (6.64%) at level 85, and 19/256 (7.42%) at level 99, with increases every 6 levels (at 91 and 97). In short, we just have to look up the odds for each ore at each mining level. So the formula, which assumes perfect mining: time spent mining t / 0.6 seconds per tick = ticks ticks / ticks per roll (from pickaxe) = rolls rolls * ore chance per roll (from level and ore) = expected ore yield expected ore yield * (1 + odds of obtaining an extra ore per roll) = actual ore yield ((t time spent mining / 0.6 seconds/tick) / (n ticks/roll)) * p1 ore chance * (1 + p2 extra ore chance) = ore yield So for example, if you mine iron with level 55 mining , you have a 237/256 (92.58%) chance to obtain an ore. If you mine iron for an hour using a Rune pickaxe (3-tick), you'll roll for ore 2000 times and obtain an ore 92.58% of the time, and so expect to obtain ~1850 ores. If you've completed the Varrock easy diary and use the Varrock armour 1 while mining, you have a 10% chance to get an extra ore on each successful roll, so you'd expect to obtain ~2035 ores instead. ((1hr / 0.6seconds/tick) / (3 ticks/roll)) * 237/256 ore chance * (1 + 0.10 extra ore chance) = ~2036 ores per hour. Not bad! Except this doesn't consider banking time, or how quickly your inventory will fill up with non-ore items like gems (especially with bonuses from the amulet of glory !) or unidentified minerals from the Mining Guild . To consider these factors in a general way, we can introduce an efficiency percentage , which will be the percent of time spent actively mining during a period of time in which you're generally participating in mining but leave occasionally to bank your loot. I can't provide a direct way to calculate this percentage, as it will depend on how quickly you can navigate to the nearest bank and how often your inventory fills up. But it's easy to introduce: ((t time spent mining / 0.6 seconds/tick) / (n ticks/roll)) * k efficiency * p1 ore chance * (1 + p2 extra ore chance) = ore yield So if we continue the prior example, sneak into the Mining Guild with a Spicy Stew boost of +5 , and assume that 20% of our time is spent banking (or conversely, 80% of our time is spent mining), we can take advantage of the cluster of three iron rocks and being steps from a deposit box . In this circumstance, and adjusting for our 80% efficiency, you'd expect to obtain ~1628 iron ore. Well, except that our effective level is now 62 because of the invisible +7 boost to mining from the mining guild , so our ore chance goes up to 255/256 (99.61%) . Re-entering this into the formula to update our result: ((1 hour spent mining / 0.6 seconds/tick) / (3 ticks/roll)) * 0.80 efficiency * (255/256) ore chance * (1 + 0.1 extra ore chance) = ~1753 ores per hour. Given the iron mining guide from before defaults to 1700 iron ore per hour for calculating your profit, I'm reasonably confident this figure is accurate to the given circumstances.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5396127104759216
+  },
+  {
+    "seed": 7,
+    "text": "I have finished the game, and so I now feel confident answering this question. To pick up a chainsaw, you need to wait for it to stop spinning. Normally that doesn't take very long, but in the first chainsaw section it appears to be scripted to keep spinning until you kill the first wave of enemies.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3502262532711029
+  },
+  {
+    "seed": 7,
+    "text": "Based on my research, it is not required to connect to the internet to complete set up on the Switch 2 . However, it is required for System Transfers and big system updates. Some physical games have minor update patches that the system can install. However, some games require system updates to play, so if you want to play certain games, you'll have to connect to the internet. Other services like using Express MicroSD cards , Game-Key Cards , and GameShare require system updates to work too. (For GameShare, all systems need to have the same update version to work.) Game-Key Cards are game cards that don't have the full game installed on them, but contain a special key to download the full version of said game. You will need an internet connection to download the game for the first time, but you don't need internet afterwards. Local Wireless is pretty common in games (at least in the games I'm into, like Mario Kart), so that's a bonus.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6758873462677002
+  },
+  {
+    "seed": 7,
+    "text": "It looks like it's the Garrison that benefits from the Barracks. I don't know how I missed it before!",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3602360486984253
+  },
+  {
+    "seed": 7,
+    "text": "No, not necessarily at Y 127 According to Minecraft Wiki , When lightning is to strike, random X and Z coordinates within the chunk are chosen, and the block just above the highest block that is liquid or obstructs movement is chosen for the lightning strike. If a lightning rod is nearby, it strikes the rod instead. Then if there are any living entities that can see the sky in a 3\u00d7h\u00d73 region from 3 below the target block up to the world height, one such entity is selected at random and the lightning target is moved to the block the entity stands in. The target block is checked again for the following conditions: Target block can see the sky. Rain (not snow) is falling in the target block. Thus, lightning does not naturally strike within cold biomes or biomes where it does not rain. If these conditions pass, lightning strikes. That means it will strike as long as the block can see the sky (the path of the lighting isn't impeded by another block). So if you build a roof at Y=256, and it's the highest non-air block in that column, then yes, lightning will hit that roof instead of your house below. Building a glass roof at Y=256 will protect everything underneath, as long as it's the highest surface. You don\u2019t need to build it at Y=126 \u2014 that\u2019s not a special lightning layer. If you want more control, use a lightning rod : It attracts lightning within a ~64-block radius (Java). Place it somewhere safe, and it\u2019ll redirect lightning strikes away from flammable structures. TL;DR: No, lightning doesn\u2019t strike only at Y=127. It hits the highest block in the column. A roof at Y=256 will absolutely stop lightning from hitting your house below.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7196460366249084
+  },
+  {
+    "seed": 7,
+    "text": "Naruto fighting game with Hulk and Homer Simpson? 8-bit-looking Naruto fighting game with Hulk and Homer Simpson. Madara is overpowered, and I think Homer's victory speech included \"mango\". Game name included \"mugen\" but unsure if officially - played it about 15 years ago. Which game could it be? This is the exact Hulk:",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6053591966629028
+  },
+  {
+    "seed": 7,
+    "text": "The Heart is trapping the Empress, Jessamine Kaldwin 's soul. Spoilers. This information is revealed in third mission of Dishonored. So, in the third mission of Dishonored, Vera Moray (aka Granny Rags) hints during the mission, the Heart was crafted from that of Empress Jessamine Kaldwin after her death. When Corvo encounters Granny Rags in the alley behind the Golden Cat bathhouse, she tells him, \"Nothing's been the same since her death! Poor child! Her spirit lives on \u2013 trapped \u2013 misused \u2013 and for what purpose?\" (link is to a YouTube video; line starts from 2:41 mark). This section is based on seventh mission. There's several occurrence, that the Heart itself hints their origin; most notable \"hint\" that the Heart gives to Corvo is when the Heart is used against Daud , the assassin who assassinated the Empress, Jessamine Kaldwin, and kidnapped her child, Emily Kaldwin . The Heart says: \"Why have you brought me here? Am I meant to forgive this man for what he did?\" (same video as above; line starts from 3:25 mark). Fun fact: the Heart and Jessamine Kaldwin shares same voice actress, April Stewart .",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.3017479181289673
+  },
+  {
+    "seed": 7,
+    "text": "The Count follows a pattern, not based on the type of bat, but on the position he is in. So in the screenshot above he is in position 1, you need to use one card and he will swap to another position, either 2 or 3 (counting up from left to right). Once he moved, you follow his pattern according to this: 1 2 4 1 3 4 2 3 So after one card, if he moves to position 3, you now know that after 1 then 3, next in the pattern is 4.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7269585728645325
+  },
+  {
+    "seed": 7,
+    "text": "The level changes are arguably very minor and definitely not drastic. Many are for the sake of patching up visual problems that would now be more noticeable with an increased draw distance and resolution. Other changes include extra save totems and slightly different enemy placement. User Smoke39 on Steam has compiled all changes to the levels here . Personally, I would say these are changes you only notice if you compare the original and the Remaster next to each other. Introduction This is a list of standout changes made to the original levels in the remaster that I noticed while playing through the originals (which are available in the workshop here ). Most of the changes involve adding or extending walls to fix holes revealed by the remaster's extended draw distance, which are numerous and generally not terribly interesting, so this list mostly focuses on everything else. The biggest layout changes are on levels 4 and 6, with some smaller ones on 1, 5, and 8. The biggest cosmetic change is the wall on level 3. Level 1 - The Hub second key area changed from a canyon with a nook for the key to an open clearing added 2 grenadiers by first shotgun raised cloud layer up from the ground after first cave added grenadier atop teleporter column after first cave Level 2 - The Jungle added rock blocking sergeant LOS to entry teleporter in rope bridge area tall trees changed to rocks atop final slope in rope bridge area added rocks beside poachers next to rope bridge added tree to the right of rope bridge Level 3 - The Ancient City added awning over first stairs added tops to the trees in entry area added ladders to the structures atop first stairs (have to jump down from above in original) added large wall on the left atop second stairs (extended draw distance reveals the topless trees in original) changed narrow stone catwalk on the left in this area to ladder bridge in the middle Level 4 - The Ruins raised underwater cave entrance early in level cave interior is no longer waterlogged, and has a new boulder in the middle arena tucked around corner replaced with plainly visible gallery removed flaming urns on pillars leading up to shaman past the arena/gallery original has a log with a full health on it by this shaman, which opens the gate when jumped on; remaster replaces this with a switch on a platform changed cliff side in one spot in third key area to a brick wall to match the other walls Level 5 - The Catacombs somewhat simplified left leg of the tar pillar area leading to cave (mostly a loop was removed) Level 6 - The Treetop Village added save totem just after tree elevator consolidated a 3-way split just before first really big platform area long, winding catwalk on the right leading to first key shortened, and added to the end of the middle path's platforms; collecting the key opens a gate in the middle path's platforms to... a new set of platforms takes the place of some rising pillars that the left path led to second key, rocket launcher, and the penultimate cave: secret path on the left now leads to rocket launcher instead of key the jump from second key (RL in remaster) back to earlier platforms has been shortened (original relied on a climbable collapsed bit) the alcove at the end of the cave below the fog line (life force hints at it) with a teleporter to the rocket launcher (second key in remaster) has been moved up the teleporter in the shack to the final cave has been moved to a new stone pillar beside the platform with the level 2 key (rocket launcher in original) Level 7 - The Lost Land added bones just outside beginning cave as railings added save totem in triceratops catwalk section the triceratops in the same area doesn't exist in the original raised walls behind 2 turrets above second chronoscepter piece (can see their lack of tops from the following area with the aliens) Level 8 - The Final Confrontation removed trap doors and hovels for pulse rifle cyborgs from hallway after giant lava cave full of pur-lins closed off alcoves and tunnel in t-rex room",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5754746198654175
+  },
+  {
+    "seed": 7,
+    "text": "Is there a painless way to run Starcraft 2 on Linux? Now that Starcraft 2 is free to play, is there a painless way to run it in Linux? People have been doing it with different success for years, but the hacks are spead over different resources and often are distro specific. I have some specific limitations though. Since I saw file names like Starcraft64 on a Windows install of Starcraft 2, I would like to run it on a clean 64bit Linux distribution without the multilib 32bit compat layer installed. I am fine with either 64bit stable wine or the 64bit staging wine, no wrappers like PlayOnLinux or Lutris should be involved. Is it possible to install and run Starcraft 2 this way? So far I went to starcraft2.com website and downloaded the installer, but when I ran the file tool on it, I was told it is a 32bit Windows executable, so obviously it won't be able to run under pure 64 wine.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7074214816093445
+  },
+  {
+    "seed": 7,
+    "text": "If your core leaves the lane (and go farm jungle?) then you should try to last hit your creeps and stay near your tower. Play defensively as your opponents can dive your tower and kill you. As you are playing support your power is relatively high on lower levels, so you can turn that dive around and kill one or both of them! The important thing is that you shouldn't feed too many kills to the enemy core, and to try to get as much gold and exp as possible. If staying alone 1v2 is not feasable, as the enemy duo can kill you easily you should sacrifice that tower and leave. DO NOT go into jungle with your ally that left you! Not only will you trigger him and decrease your odds of winning, you are letting your team play 3 v 5. Instead you should go to one of the other lanes (stealthily, so the enemy doesn't see you) and help them get kills. But such situation shouldn't be all that common. Cores rarely leave lanes, even when they really should. You should maybe look into some videos with resources for new players. When you get a bit better at this game such situations will be even rarer as people get better idea what they should be doing. And remember: Some games are unwinnable. Some are unlosable. Don't worry if your allies are doing something dumb, just focus on your own game.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6911548972129822
+  },
+  {
+    "seed": 7,
+    "text": "Similar to this earlier-posted answer because they moved first , however - It is possible to convert a Teralith world into a vanilla one. This is because of this important thing: Teralith only uses Vanilla blocks As long as your modded version doesn't include blocks that doesn't exist in Vanilla (for example, if you're using Oh The Biomes You'll Go , Biomes O' Plenty or literally any content mod), all you need to do is: Download NBTExplorer so that you can directly edit a Minecraft save file. Open your level.dat with NBTExplorer and drill down to: level.dat/Data/WorldGenSettings/dimensions/minecraft:overworld/generator/biome_source Delete the biomes compound/list, and replace it with a string property called preset with the value minecraft:overworld . Press Ctrl + S to save. You should be able to open the world in Vanilla, with your player data intact. Please note that you'll lose all the custom biome colors. Before: After: and everything becomes minecraft:plains .",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7567809224128723
+  },
+  {
+    "seed": 7,
+    "text": "What does \"max. 3% of bank\" stand for in Cookie Clicker? The description for the Bakeberry seed on Cookie Clicker says that the extra 30 minutes of CpS that you can get is capped at \"3% of bank\". What is it referring to? 3% of the bank CpS? If that is so, it would always be capped because 30 minutes of bank CpS is smaller or equal than 30 minutes of the total CpS. That's confusing.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6842441558837891
+  },
+  {
+    "seed": 7,
+    "text": "You need to actually give Thanatos nectar in order to receive his keepsake. Note that, when encountering Thanatus during a run, the only time you can give him nectar is after you complete the enemy-killing contest, and if you don't interact with him in a certain amount of time once it's finished, he'll disappear, so be quick!",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5191969275474548
+  },
+  {
+    "seed": 7,
+    "text": "How can I get my settlers off the roof without a mod? In Fallout 4, my Sanctuary Hills settlement has suddenly started having this problem where some of my settlers and Codsworth decide to throw a party on top of one of the abandoned buildings. They don't do anything but stand there. Clearly it's a glitch. Googling has suggested a \"spring cleaning\" mod to remove the building entirely (it's the one that has the workshop in the driveway). I placed a ladder against the side of the building and carefully climbed up (the roof is mostly holes), but while I can happily go up, my settlers will not come down. They really like hanging out of top of this roof apparently. How can I get my settlers to come down without using mods? I'm open to console commands, but I'm trying to finish my first play through \"vanilla\" before installing any mods. As a side note, this only recently happened after I fought off a super mutant attack at the settlement. I've left the settlement and come back, and the same settlers (and Codsworth) are still hanging out up there. The screenshot is the exact location of where I've propped the ladder, but they're just ignoring it.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6519158482551575
+  },
+  {
+    "seed": 7,
+    "text": "The game will say something to the effect of \"There are no allies to call upon\". Additionally, the game will not allow more than 12 allies in play no matter what, even if every character has been unlocked.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.32650619745254517
+  },
+  {
+    "seed": 7,
+    "text": "Does time spent doing sidequests in The Witcher 3 affect the main story? I recently bought The Witcher 3, seeing as it had very good reviews and it has been ages since I played a RPG. Now, due to the urgency of the story in the beginning, I feel the need to advance with it rapidly. Yet I somehow have accumulated at least 5 side quests that seem to distract me from my main quest. Is timing really an issue or can I just explore everything I want to?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7075046896934509
+  },
+  {
+    "seed": 7,
+    "text": "To fix it for this particular patch. In Steam, go to properties -> Betas -> 1.40.8.8 - 1.40.8.8. Then update your game and proceed as normal.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5519374012947083
+  },
+  {
+    "seed": 7,
+    "text": "Finally got it, putting the info here in case someone has the same question down the line: I took a gang leader's quest (delivering weapons), then bought the necessary weapons. I tried to exort a nearby village, and they fought back, which drove my crime rating up to the point where the kingdom in question declared war on me. (You don't have to go through with the battle against the villagers; you can then cancel). I snuck back into the town (do not use a disguise, otherwise NPCs won't recognise you and you can't complete the quest - it has to be the 'sneak' option that has a chance of failure) and handed over the weapons. I then waited a bit but got captured by a patrol (can't wait inside settlements when you're officially an enemy) I waited some more in prison, eventually I was offered to pay for my freedom, and I took the offer... then the achievement popped. In the end, it feels to me like \"Getting captured and then buying your freedom\" is what counts as \"Completing a quest\", but I can't be entirely sure because I know this game sometimes takes a while to process some achievements, so it could be a coincidence.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5501328706741333
+  },
+  {
+    "seed": 7,
+    "text": "That's Day of Defeat , a game based on the Half Life 1 engine. Here is an example showing the same HUD and weapon.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3224462866783142
+  },
+  {
+    "seed": 7,
+    "text": "Current syntax for this as of Minecraft 1.21.5: /give @s minecraft:written_book[written_book_content={pages:[{raw:{text:\"Arqade\",color:\"gray\",underlined:true,click_event:{action:\"open_url\",url:\"https://gaming.stackexchange.com\"}}}],author:\"bar\",title:\"foo\"}] Notably you have to wrap things in fewer layers of quotes, which is always nice.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6932195425033569
+  },
+  {
+    "seed": 7,
+    "text": "\"Reason\" is a bit of a relative term at Aperture, where so much of what they do is unreasonable, but this turret is referenced at one other point in the game. Specifically, the automated test messages heard in Chapter 1: The Courtesy Call (and the accompanying video on the wall panels) describe, among other contingencies, what to do if the Earth is currently governed by a manner of animal king, sentient cloud, or other governing body that either refuses to or is incapable of listening to reason This is accompanied by a graphic showing the \"animal king\" as a gigantic turret with leopard spots and a crown menacing some hapless humans. Does it make sense for Aperture to have actually built such a turret, possibly for some kind of deeply implausible training scenario? Not really. But it doesn't make sense for them to inject a bunch of Olympians with praying mantis DNA either and they apparently did, so who knows?",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.4437994658946991
+  },
+  {
+    "seed": 7,
+    "text": "Can the Switch 2 be reasonably functional without ever connecting to Wi-Fi? Can the Switch 2 be reasonably used for most core functionality without ever connecting to Wi-Fi? Like a Game Boy from ancient times. Other sources (gaming news sites, Reddit, support pages) are maddeningly inconsistent. Some say Wi-Fi is needed. Some say it's needed just for setup, but not after that. Some say it's not needed, but then add something like \"just connect at a coffee shop for updates\". For this question, I mean not ever connecting to the Internet. Not at initial setup, not for updates, not for any reason at any time. Maybe a better way to phrase this question is, what do you lose from the Switch 2 by never connecting it to Wi-Fi? Would it be a brick? Would you be able to play a very limited number of games? Would you be able to play most single-player games? (It goes without saying that games with cloud servers and account-based social features wouldn't be available. For the purposes of this question, I consider that obvious and therefore not \"something you lose\".) For games that are playable, would there be significant issues with bugginess? For example, I know that some Switch 2 physical cartridges are actually just fancy digital keys that require Wi-Fi for downloading the game content. Are there offline alternatives for obtaining such games? For another example, I also know the PS5 can require Wi-Fi to download system software updates before some later releases will run, even when a physical disc is present in a hardware disc drive. Does Switch 2 have a similar restriction? For one last example, I also know there is a local wireless connection feature that does not access the public Wi-Fi. How common is that? (Yes, I do realize there's not going to be an exact number answer. But, like, on a hand-wavy scale of \"just a few obscure games\" to \"pretty much any game with online multiplayer usually comes with local multiplayer support too\".)",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6331126689910889
+  },
+  {
+    "seed": 7,
+    "text": "What about Ms. Pac Man (1982)? The 4 antagonists of the original Pac-Man (1980) are the ghosts Inky, Blinky, Pinky, and Clyde. In the late-1982 TV show Inky and Blinky are portrayed as males, but I cannot find any indication of the ghosts' genders in the original game, aside from the masculine name \"Clyde\". In Ms. Pac Man, \"Clyde\" is replaced with \"Sue\", who is depicted as a feminine ghost. Unless Inky and Blinky were confirmed as males in media outside the game itself by early 1982, we can argue that when it came out, Ms. Pac Man was an \"all-female\" cast, having a female protagonist, one female antagonist, and three antagonists of indeterminate gender. Only later did it lose its \"all-female\" distinction when Inky and Blinky became canonically male.",
+    "true_label": "supported_claim",
+    "predicted_label": "help_request",
+    "confidence": 0.6854634881019592
+  },
+  {
+    "seed": 7,
+    "text": "The big thing they don't tell you about this challenge and the \"Say hello to a teammate\" challenge is that you cannot do them during setup time. Instead, you have to wait until the round actually starts and THEN do them. Unfortunately, that makes it harder since teammates are going to be moving around after the round starts.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.46820321679115295
+  },
+  {
+    "seed": 2024,
+    "text": "To collect honey, you need to get a special jar from the questgiver by talking to her. Things to know, #1: The jar is valid within a limited quest area only; if you cross its border even a little, the jar and its contents disappear. Try to find the border first before losing honey. To fill the jar, you need to get up to the beehives, and \"use\"/frob them. Different hives give different amounts of honey; an status icon should appear with a number on it. Things to know, #2: The actual collection is only active during a specific quest phase \"Gather honey for the Kodan\", when a timer shows up. Outside that quest, you can still get the jar, do the jumping, but no honey is in the jar. So why can you get the jar when you can't effectively get honey? Officially, it's a bug. But if you go for some achievements, you need to activate/use/frob the hives, regardless of the honey. You can't do that without the jar. So this helps with the achievements, while frustrating players who don't know the special mechanics here. Depending on your other quests, a bee called Ms. Buzz can be found who asks you to give her the honey instead. If you do, she buzzes off and can be found in the \"Queen's Confidence\" location later. It's related to a different quest; no effect to the honey collection other than that. Now, the jumping puzzles can be quite taxing. There's a shortcut here, but it's kind of a spoiler: You can use the Jade Bot Glider Booster skill on \"6\" from EoD. Run up the hill a bit, jump downwards to glide, use booster to gain height. Booster takes 30 seconds to recharge.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7839241027832031
+  },
+  {
+    "seed": 2024,
+    "text": "I'm pretty sure the only way to do it is with NBT editors like NBTexplorer or mods. But if you don't need them to be useable, you can use bundles by activating the experiment in the world creation or saving a bundle in a hotbar slot, by which I mean the default like {C+[a number]}.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6836107969284058
+  },
+  {
+    "seed": 2024,
+    "text": "Witchy (1975) On page 11 of the September 1975 issue of People's Computer Company , we find the BASIC code for the scintillating game Witchy , in which you battle the eponymous witch to rescue your friends.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.2963150441646576
+  },
+  {
+    "seed": 2024,
+    "text": "I decided to simply try it and see, and left the Coop as pictured in the screenshot. The next day, I collected six eggs, even though only five feed stations were accessible. Since animals won't produce unless they're fed, this must mean that blocking off the feed stations has no effect on whether the animals can eat from them .",
+    "true_label": "supported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.31719157099723816
+  },
+  {
+    "seed": 2024,
+    "text": "If you're in a winter/cold biome, you can abuse the fact that animals will path-find to available food. This only works in situations where food for wild animals is scarce. The general way you can use this is to create a small room near your killbox that contains some food, like corn. Complete the room with a roof and door, but force the door to stay open. This will protect the food from rotting, but also allows animals to path to it. If you put some type of trap between the animals and the food (I use beartraps in my killboxes), they'll hit the traps and get downed (ideally), or just bleed out. The downsides to this are if the animals make it to the food, they'll eat some of it, and it will also generally cause the area to be covered in blood. Here's an example:",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7871578335762024
+  },
+  {
+    "seed": 2024,
+    "text": "This isn't a complete list, nor does it have all of your requirements, but it's worth posting anyway. Here is the Super Sample spire: It sticks out like a sore thumb on most maps, especially plain maps without much tree cover or vegetation. As of this post in May of 2025, here is a guide to the various biomes in the game . The planets on the upper half of this image tend to be the best for spotting the rock outright, as it is easy to see against the general terrain. Additionally, you should prioritize maps with City structures on them. The Super Sample rock WILL NOT spawn inside City structures, and as such makes the area you need to search for the rock much smaller. I have noticed that since City maps were introduced a few months ago, my supply of Super Samples has skyrocketed, and finding it is much easier than before. EDIT: With the release of Heart of Democracy in May of 2025, Supercities were introduced. These are separate from the above described cities, and have different locations for Super Samples. The big rock is not present, replaced with what looks to be a monument to the helldivers. This screenshot has been taken from Reddit : There are occasional fakes that are still Minor Points of Interest, but these rocks will be corrupted or destroyed in some way, usually based on the faction you're against. There may still be supplies and Common/Rare samples around these, so they're worth looking at anyway. The easiest mission level to do is in fact Suicide Mission (7). You will have guaranteed 3-4 Super Samples per mission. The higher the difficulty, the bigger the map as well, leading to an increased time to find the samples. Suicide Mission seems the most time efficient because... Unlike Super Credit farming, you MUST finish the mission to extract with your samples. Super Credits count as soon as they're found, so you can quit out once you've collected all Minor Points of Interest on a map. However, with Super Samples, you must extract for them to be \"banked\". Personally, the only farming that seems worth doing is Super Credits. You can run Medium (Level 3) missions, with a fast Light Armor and a jetpack / car and the UAV booster, and speed around to each of the Minor Points of Interest. When you have them all, Return to Ship, and start again. Super Samples are different, and require the mission objectives to be completed before Extraction is available. Just by playing the game normally on at least Suicide Mission, on as many City maps as you can, you'll earn plenty. \"Farming\" them is inefficient by the game's design, and perhaps enjoying the game rather than farming materials is better!",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.5853068828582764
+  },
+  {
+    "seed": 2024,
+    "text": "What was the first video game where cold slowed enemies down? In the question 'Where does the trope of \"cold damage = slowing enemies down\" come from?' on Role-Playing Games SE, an answerer argues that cold damage slowing down or paralyzing enemies is a relatively new concept in D&D (4th edition, 2007), and that they might have taken the idea from videogames. What was the first video game in which cold attacks had the side effect of slowing down enemies or paralyzing them? The linked question mentions Diablo II (2000), but there are earlier examples for sure: for instance, Sub-Zero's freeze attack in the first Mortal Kombat (1992).",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6775683164596558
+  },
+  {
+    "seed": 2024,
+    "text": "Well, I figured it out and it wasn't a PS4 controller or Duckstation problem at all. I had Steam running and for reasons I can't quite figure out it was translating my controller inputs into keyboard presses. Shutting down Steam did the trick. This problem also occurred on a variety of other emulators, though funnily enough not MAME.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "help_request",
+    "confidence": 0.3393572270870209
+  },
+  {
+    "seed": 2024,
+    "text": "Currently, no. This functionality is available only on Steam and Console versions of Balatro. PlayStack have seen this feedback and logged it , but there doesn't appear to be any current public plans to implement this on mobile.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.31912338733673096
+  },
+  {
+    "seed": 2024,
+    "text": "This may be a bug with Hermaeus Mora's realm (which would jive with it happening on Solstheim after extended jaunts through same), specifically the health-draining pools of liquid there. I read The Winds of Change , found myself near such a pool, entered it, left it, left the realm, and the problem was solved. I found this solution here. An alternative solution that worked the first time I had this issue was to open the console and type player.resurrect , which pretty completely resets the character. The disadvantage of this approach is that this also wipes all powers, so you need to un- and re-equip everything and either re-acquire all powers the long way, or use player.addspell in the console with the ID per the list of powers in the UESP wiki . (It makes sense to note the active powers before running player.resurrect .)",
+    "true_label": "guide_or_solution",
+    "predicted_label": "supported_claim",
+    "confidence": 0.28957921266555786
+  },
+  {
+    "seed": 2024,
+    "text": "It looks like it's the Garrison that benefits from the Barracks. I don't know how I missed it before!",
+    "true_label": "unsupported_claim",
+    "predicted_label": "help_request",
+    "confidence": 0.39584898948669434
+  },
+  {
+    "seed": 2024,
+    "text": "I ran into this problem and couldn't find a solution online. Later I managed to find a fix so I'm sharing it here in hope it can help other Blizzard game players playing on NVIDIA GeForce Now. This is for people with multiple battle.net accounts, playing Blizzard games using NVIDIA GeForce Now, needing to switch battle.net accounts on GeForce Now, who have trouble using the automatic login feature to log into the correct battle.net account as they have set, where GeForce Now may be logging them into a previously connected battle.net account. After trial and error, here's how I fixed it: First disconnect any Battle.net account from your GeForce Now settings. Then in your browser go to \"account.battle.net\" and log into your old account. On the left side menu, go to \"Connections\", and you should see this: \"NVIDIA GeForce Now\" is in Connections, as well as \"Authorized Applications\" down bottom. You want to remove both of these from your old account. (After that, I waited a few moments. I'm not sure if this is necessary, but I wanted to be on the safe side. In fact I would recommend waiting a few moments between some of the steps just to prevent any possible syncing issues) Log your old battle.net account out from the browser, and log your new one in. Go to GeForce Now and connect your new battle.net account like normal. Launch the game from GeForce Now. Once the game window opens, you should already be logged out of any battle.net accounts, and will be prompted to connect one. You just connect your new one there. Hopefully this can help people!",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6876834630966187
+  },
+  {
+    "seed": 2024,
+    "text": "In Portal 1, these are \"Advanced Knee Replacements\" In-universe, they appear to make the user invulnerable to fall damage. According to the Wiki , In Portal 1, Chell uses 'Advanced Knee Replacements', until the explosion resulting from her defeat of GLaDOS at the end of the game broke them. In Portal 2 , Chell replaces them with a similar device, the \"Long Fall Boot\", explained in detail in this Aperture Science \"Investment Opportunity\" demonstration video: This video is part of a series of videos that were created to promote Portal 2, showcasing various bits of technology in the Portal universe as if it were actually Aperture Science seeking investors for their research & development. Note that both Portal 1 and Portal 2 are set after Aperture Science's demise Thus both the Advanced Knee Replacements and the Long Fall Boots, must have been made prior to those events. The reason for the replacement comes from the development of Portal 2. According to Matt Charlesworth , one of the people who worked on the game, the team debated keeping or replacing the 'Advanced Knee Replacement' in Portal 2, before eventually settling on the \"Long Fall Boot\" as a variant of the same technology.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.38368648290634155
+  },
+  {
+    "seed": 2024,
+    "text": "To pair your controller with a second Puck or Steam Machine and use it as a second device, you need to ensure that your controller is turned on in its second pairing slot. When turning on your controller, hold down L1 + A and then (while the other buttons are still held) press Steam , to go into its second pairing slot (this appears to be the information the Steam help page is missing). Your controller will make a different to normal noise when it turns on; the different noises are meant to help denote what device the controller is going to attempt to pair to. Then follow the pairing instructions in the question. The controller will now pair to the device and use the Puck/Steam Machine as the 2nd device. You can then see the 2 paired devices in your Steam Settings, under Controller, while the Controller is turned on: In the future, you should hold the relevant buttons when turning on the controller to connect to the correct device. R1 + A , Steam to connect to your primary device (the Steam Machine in this example), and L1 + A , Steam for the secondary (the Puck attached to the PC in this example). The controller will, however, remember what pairing slot it was last in if you simply turn it on with the Steam button. So, if you were last using your controller with your Puck, turning it on with the Steam button will mean it'll attempt to pair to the second device (the Puck). Again, the noise the controller makes will help you identify what device it will try to pair to. You need to turn the controller off (hold the Steam button), and and turn it back on with the correct button combination to change pairing slot. Note, you can also use R1 + B , Steam to enable Bluetooth pairing. Of course, pairing with Bluetooth doesn't follow the above instructions as this doesn't use a Puck.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.8061031699180603
+  },
+  {
+    "seed": 2024,
+    "text": "You have to finish with 10k. Anything under 10k doesn't count at all. I got two of three by soloing the Empire Hunt: Technocrat. Had 9,400 points by the end, and the boss kill sent me to 10k and it counted. So go to Fireteam Ops. and enter the Empire Hunt: Technocrat and do it solo if you want the most reliable method. Kill everything .",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6723002791404724
+  },
+  {
+    "seed": 2024,
+    "text": "How exactly were players meant to figure out special moves in games such as Street Fighter II? I don't think I ever read the manual to any of those games, but maybe they contained a full list of all attacks per character? And in the arcade, maybe it said them on the machine? So it was all about memorizing and then the dexterity of doing it quickly in the game? Or was it also about actually discovering the right combination by aimlessly mashing buttons endlessly? I was never able to do any special move no matter what combination I tried in any of those games, except for some basic ones and only by accident. Basically, would reading a guide online listing the attacks be cheating and bypassing the point of the game?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.7120998501777649
+  },
+  {
+    "seed": 2024,
+    "text": "What is the first video game boss to have a second phase? Nowadays, it is only natural that bosses have several phases in video games. You're almost disappointed when a boss is simply defeated in one go and nothing changes. But I was wondering, which is the first video game boss to have a second phase? I would define 'a phase' as a mix of: difficulty is increased with additional, expanded and more complex attack patterns health bar is reset appearance changes",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6869753003120422
+  },
+  {
+    "seed": 2024,
+    "text": "Does genital customization matter in Cyberpunk 2077? In the character creation screen there is an option to add a penis to your character, regardless if you've chosen a male or a female character. There is also an additional option to customize the type of penis you choose as well as the size of the penis. That said, with a few hours into the game I haven't seen anything meaningful that would make these options noticeable. During sex scenes with Joytoys my large penis isn't noticeably visible and I haven't seen any clothing options that would make any changes made obvious. So is there even a point to having a penis? Does my penis size matter, or does the type of penis I have have any functionality within the game? Besides the character roleplay, I haven't seen any meaningful in-game interaction which makes use of the feature...",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.5003218054771423
+  },
+  {
+    "seed": 2024,
+    "text": "What was the first game to voluntarily provide an in-game content warning? What was the first game to voluntarily provide an in-game content warning? If you grew up playing horror games, you've probably seen content warnings similar to this: This one is from Silent Hill , published in 1999. Basically, it's a voluntary self-declaration by the game that there's something objectionable presented in the game. What I'm looking for: The first voluntary message in a game outside of the game's internal narrative that warns the player about morally objectionable content in the game's story or presentation. Objectionable content is very commonly violent or sexual in nature, but it doesn't have to be. ( Assassin's Creed , for example, self-declared that its story could be considered culturally offensive.) The content warning could also be done tongue-in-cheek so long as it still performs the service of a content warning. (For example, God Hand featured a content warning for explicit violence and gore, which it certainly had, but it was first and foremost a jab at the content warnings at the beginning of Resident Evil games, which shared directors and publishers. It was also overlaid over a man getting kicked in the balls.) What I'm not looking for: Standardized warnings/descriptions required by government or commercial entities (ESRB, Videogame Rating Council, etc.). For the sake of having a tight upper bound, we won't accept anything required by the platform manufacturer. So, as in the above, a warning internally mandated by Konami for all Silent Hill games can be considered, but a warning required by Sony for all PlayStation 2 games cannot. In-game characters warning about objectionable content (for example, protestors in Postal 2 that object to events in the game). Warnings that focus on meta gameplay aspects rather than morally objectionable content (for example, Doom 's Nightmare difficulty displaying the message \"Are you sure? This skill level isn't even remotely fair.\"). Warnings provided by advertisements, box art, cabinet art, and so forth. It has to be in the game.",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6846335530281067
+  },
+  {
+    "seed": 2024,
+    "text": "The game will say something to the effect of \"There are no allies to call upon\". Additionally, the game will not allow more than 12 allies in play no matter what, even if every character has been unlocked.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.2975847125053406
+  },
+  {
+    "seed": 2024,
+    "text": "Can you reset perks and stats in Cyberpunk 2077? Is there any way to re-spec perks and stats during the game in Cyberpunk 2077?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.44349753856658936
+  },
+  {
+    "seed": 2024,
+    "text": "How do I tell which Steeve is mine? Its AI will make him in general follow you while out of combat. So run other direction - Steeve should shortly follow, given enough distance. In combat they will seek enemies, often going a big distance to another dwarf to protect him. Tip: always try to tame stronger bugs (slasher and guard, see wiki ) for coolness! They look cooler and are somewhat stronger (subjectively, never bothered to test it). Is there a way to tell if my Steeve is still alive, especially if there are multiple Steeves running around after a fight (so that I'll know when I need to tame another Grunt)? Apparently it doesn't matter. Steeve doesn't last long. Just use your skill by cooldown on next bug to make minus one enemy. Kill another with charge pickaxe skill. Then back to destroying bugs in a classic way - with weapons. Apparently, I can 'pet' an already tamed Grunt. This can get confusing if there are multiple identical Steeves in the vicinity. What does petting an already tamed Grunt do? Will petting another Dwarf's Steeve make that Steeve mine? Petting does nothing, it's only for laugh. Petting may prevent you from using items (e.g. Molly), which is somewhat annoying at times. Petting other dwarves Steeves is considered a crime. Be ready to take all consequences: angry dwarf and his angry friends may decide to shoot your down. If you are \"petter\" (that pervert type of dwarf who must pet pets of others), then do it when no one seeing you (during Dreadnaught fights is the best). What happens to the old Steeve if I tame a new one? Does it become hostile again? Then the old Steeve is gone. His soul will go to a better place and he will not be forgotten.. at least until you charm roughly ~100500 other Steeves, because it's proven to be impossible to remember that many at once.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "help_request",
+    "confidence": 0.37063875794410706
+  },
+  {
+    "seed": 2024,
+    "text": "This is the timeline of the games as we currently understand it \u2020 , according to official and unofficial sources : Main Timeline Skyward Sword (\"Many years\" later + 100 years) The Minish Cap (\"Generations\" later) Four Swords (After the Hylian civil war that lasted \"a long time\") Ocarina of Time / | \\ Fallen Hero Timeline Child Timeline Adult Timeline (\"Many years\" later) A Link to the Past (Several months later) Majora's Mask (\"Ages\" + hundreds of years later) The Wind Waker (Soon after) Link's Awakening (\"Many years\" later) Twilight Princess (Soon after) Phantom Hourglass (Soon after) Oracle of Seasons/Ages (Hundreds of years later) Four Swords Adventures (One hundred years later) Spirit Tracks (Centuries later) A Link Between Worlds | | (Soon after) Triforce Heroes | | (An unknown amount of time later) Echoes of Wisdom * | | (\"Many years\" later) The Legend of Zelda | | (Six years later) The Adventure of Link | | (?)** (?)** (?)** Era of the Wilds/Great Calamity (Possibly more than 10,000 years later) Breath of the Wild * (Soon after) Tears of the Kingdom * The most confusing part is the timeline split after the events of Ocarina of Time . The quick explanation is that the Fallen Hero Timeline is the timeline where Link fails his quest and Ganon ends up with the completed Triforce, forcing the Sages to seal it and him within the Sacred Realm, which is now the Dark World. The Child Timeline is where Link successfully defeats Ganon and goes back in time as a child (i.e., the final scene of Ocarina of Time ). He warns Zelda about Ganondorf's betrayal and they prevent him from ever stealing the Triforce in the first place, though he survives his execution due to the gods giving him the Triforce of Power anyway ( for some reason ). The Adult Timeline stays in the future timeline after Link defeats Ganon. Because Link went back in time (to the Child Timeline), this timeline no longer has its Hero. So the next time Ganon appears, the gods are forced to intervene, resulting in the global flood. * : These games were released after the most recent official chronology update, so their place in the chronology is inferred from the in-game lore and might not be correct or might be retconned in the future. ** : It has been loosely confirmed that Breath of the Wild and Tears of the Kingdom take place at the end of one of the timelines, but which timeline specifically has apparently been left up to the imagination of the player . \u2020: It is worth mentioning that according to The Legend of Zelda: Encyclopedia , the chronology of the Zelda games is not a high priority for Nintendo. They will maintain the timeline if practical, but they are also not afraid of breaking it for the sake of telling the story they want to tell for a specific game, and that ultimately the intention was always for the players themselves to create their own chronology according to their imagination. (Even the Encyclopedia itself states in its foreword that it was written with a certain amount of creative license to fill in some gaps.) So while the official timeline exists for the sake of convenience, it shouldn't be seen as an absolute truth.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.333996444940567
+  },
+  {
+    "seed": 2024,
+    "text": "If you use Steam, it should be synced automatically if you turn on Cloud Saves. Otherwise, you should be able to find your saves in either ~/.config/StardewValley/Saves or ~/.var/app/com.valvesoftware.Steam/.config/StardewValley/Saves (if you use flatpak) and then you can use rsync or a similar tool to synchronize your save files between computers. Source: Stardew Valley Wiki | Saves",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7928075790405273
+  },
+  {
+    "seed": 2024,
+    "text": "How to holster a weapon in Cyberpunk 2077? I want to holster a weapon in order to not run around like a maniac. How do I holster my weapon or hold down my hands?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6562058925628662
+  },
+  {
+    "seed": 2024,
+    "text": "According to NintendoSoup , the answer to this is region-specific. Based on your region, the Switch 2/Mario Kart World Bundle may come in one of three ways. The way to be certain which form it comes in is to pay attention to the box. Full Game Download This method provides an automatic copy of Mario Kart World. Simply navigate to the eStore using the account you want the game to be associated to, and you will receive a prompt to download Mario Kart World. Download Code Instead of having a copy automatically associated with your account via the eStore, this method comes with a download code that can be redeemed on eStore. Physical Copy The third method is a physical copy of the game rather than a digital version List of countries/regions categorized by type of bundles Full Game Download United States of America* Canada* Mexico Brazil Chile Colombia Peru Japan South Korea Download Code United States of America* Canada* United Kingdom Countries in the EU / European Union (France, Italy, Germany, Spain, etc) South Africa Australia New Zealand Hong Kong Game Card (Physical Edition) Saudi Arabia Taiwan Singapore Thailand Malaysia Philippines Full Game Download versions of the bundle sold in the United States and Canada have different packaging from download code versions of the bundle",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7520723938941956
+  },
+  {
+    "seed": 2024,
+    "text": "Videogame companies usually name the thumbstick click as a button itself: On PS they are commonly known as L3 and R3 (since L1 L2 and R1 R2 are on the back). This also works for Steam Deck. On Xbox they are commonly known as LS and RS (left-stick and right-stick) or even LSB and RSB On Nintendo Switch, according to the mapping menu, they are just referred as \"Left/Right Stick Press\" So \"press the stick button\" could be a good solution.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.3696975111961365
+  },
+  {
+    "seed": 2024,
+    "text": "Baldur's Gate 3 includes all 12 principal base classes that have been around for at least two editions (the Warlock, being the newest entry, was introduced during 3.5, and turned core for the 4th edition), and have been published as such in the 5th edition Player's Handbook. With the subclasses it's a bit more complicated: BASE CLASS 5E core [2014] BG3 BG3 Patch 8 Barbarian 2: Path of the Berserker, Path of the Totem Warrior 3: Berserker, Wildheart, Wild Magic Path of the Giant Bard 2: College of Lore, College of Valour 3: College of Lore, College of Valour, College of Swords College of Glamour Cleric 7 Domains: Knowledge, Life, Light, Nature, Tempest, Trickery, War 7: idem Extra domain: Death Druid 2: Circle of the Land, Circle of the Moon 3: Circle of the Land, Circle of the Moon, Circle of the Spores Circle of Stars Fighter 3: Champion, Battle Master, Eldritch Knight 3: idem Arcane Archer Monk 3: Way of the Open Hand, Way of Shadow, Way of the Four Elements 3: idem Way of the Drunken Master Paladin 3 (4): Oath of Devotion, Oath of the Ancients, Oath of Vengeance 4: idem + Oathbreaker (but mentioned in DMG 5E) Oath of the Crown Ranger 2: Hunter, Beast Master 3: Hunter, Beast Master, Gloom Stalker Swarmkeeper Rogue 3: Thief, Assassin, Arcane Trickster 3: idem Swashbuckler Sorcerer 2: Wild Magic, Draconic Bloodline 3: idem + Storm Sorcery Shadow Magic Warlock 3: The Archfey, The Fiend, The Great Old One 3: idem Hexblade Wizard 8 Schools: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation 8: idem Bladesinging Most of the additional subclasses from the game, including those from Patch 8 , have been published in the supplementary 5E sourcebooks: the Bard subclasses College of Swords and College of Glamour , the Ranger subclass Gloom Stalker , the Sorcerer subclasses Storm Sorcery and Shadow Magic , the Fighter's Arcane Archer , the Monk's Drunken Master , the Rogue's subclass Swashbuckler , and the Warlock subclass Hexblade were published in Xanathar's Guide to Everything , and the Druid's Circle of the Spores and Circle of Stars , the Barbarian's Wild Magic , the Ranger's Swarmkeeper , and the Wizard's Bladesinging in Tasha's Cauldron of Everything . Patch 8's Paladin subclass Oath of the Crown originates in the Sword Coast Adventurer's Guide and the Barbarian subclass Path of Giants in Bigby Presents - Glory of the Giants (as Path of the Giant ). The only two outliers here are the Barbarian's subclass Wildheart , which is Larian's reinterpretation of Path of the Totem Warrior (see e.g. here ), and the Cleric's Death Domain that was added by Patch 8, which is actually a core subclass (from the Dungeon Master's Guide). As for the Artificer base class: this was introduced in the Eberron campaign setting, already during the 3rd edition (but as a Wizard specialization already as far back as 2E), and made its reappearance during the 4th and 5th in non-core rulebooks. As jwodder points out in their answer , it was published in Tasha's Cauldron of Everything , which is a sourcebook (expanding on the Player's Handbook , Dungeon Master's Guide , and the Monster Manual ). Tasha's Cauldron of Everything was published in 2020, whereas development on Baldur's Gate 3 already started in 2016: apart from the exclusion of the Artificer base class from the core rulebooks, this could account for this class not having made it into the game. There is a mod available to remedy that, though.",
+    "true_label": "supported_claim",
+    "predicted_label": "supported_claim",
+    "confidence": 0.3668231964111328
+  },
+  {
+    "seed": 2024,
+    "text": "Why do my cards suddenly look worn out? I recently started playing Magic Arena, and when I booted the game up this evening I noticed my cards all looked completely differently. Specifically, they all look \"worn out\" with a bunch of wear and tear. The below screenshot explains better than text: I'm assuming I did something to trigger this change, but I can't figure out what I did and how to reverse it. Why do my cards suddenly look worn out, and how can I reverse this?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6850041151046753
+  },
+  {
+    "seed": 2024,
+    "text": "Unfortunately it is in German, but a Blue Post states that the mailbox system is not reliable and has several issues with all sorts of items, including BoE items. It is not meant to replace regular looting. The chance of getting your mount mailed to you is next to zero. Also WoW has AoE loot, so you don't need to loot every single mob. Just kill a few mobs and loot one of them. It will give you everything you have killed in that area. And as a bonus, a Hunter can let the pet do the work by using Fetch . Or if you're an engineer you can use a Loot-A-Rang , but unfortunately it requires Cataclysm engineering.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.7652810215950012
+  },
+  {
+    "seed": 2024,
+    "text": "(1983) Manic Miner In Manic Miner , the toilets appear not as fixtures in an actual bathroom but as animated enemies on level 5: Eugene's Lair . Its sequel, Jet Set Willy (1984), is probably the first to feature an actual bathroom with a toilet, but toilets first appeared a year earlier.",
+    "true_label": "supported_claim",
+    "predicted_label": "help_request",
+    "confidence": 0.3453723192214966
+  },
+  {
+    "seed": 2024,
+    "text": "Maximizing affinity i.e. forging a bond with a character does not give any improved stats to their keepsake. Only the rank of the keepsakes influences how powerful they are. The chibi icon is just decorative and gives an overview of which relationships you have maxed out. Along with the icon, completing a bond also unlocks a line of text about the character.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.48284482955932617
+  },
+  {
+    "seed": 2024,
+    "text": "You will need a scoreboard objective. I called it 'testing' here: /scoreboard objectives add testing dummy Then whenever you want to check, run this command chain: /execute store result score day testing run time query day /scoreboard players set operand testing 8 /scoreboard players operation day testing %= operand testing This will get the current day count ( /time query day ) and store it in a virtual player score day . Then it will get the 'modulus 8' of that number, which means it'll get the remainder when dividing the number by 8. Doing this makes the day count loop from 0 -> 7. In Minecraft, there are effectively 8 days in a week. You can then do certain commands on certain 'weekdays' with the command /execute if score day testing matches <x> run <y> where x is the day and y is the command to be ran. 0 is a full moon, and 4 is a new moon.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.8043985366821289
+  },
+  {
+    "seed": 2024,
+    "text": "The option to fast travel only appears when you are near one of the fast travel points; which are: The square in front of the Whirling-in-Rags, the church at the other side of the river, and the fishing village at the other side of the river too So, get closer to one of these spots and fast travel appears on the map.",
+    "true_label": "supported_claim",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.47473493218421936
+  },
+  {
+    "seed": 2024,
+    "text": "Based on your self-answer , I would like to add few more tips. When fighting against Grey Prince Zote, the best advice I can give you is to try and stay as close to him as possible so that you know what he's up to, while trying to keep a safe distance because, as you mention, his nail has a very long reach. It's counter intuitive because staying far away from the boss/threat should make you safe, but if the boss is out of your line of sight, you have no idea what they'll do next. Specifically in the case of Zote, keeping him in your line of sight helps in 3 kind of situations (timestamps based on your video): At 1:11 in your video, he does his huge leap then slam his nail onto the ground. Even if you stand very far, this leap will get close enough to surprise you, and since you don't see him making the initial leap, it can take you by surprise, like at 1:28, whereas if you're at point blank like at 0:45 and 0:56, you can dodge it nearly the same way as one of his normal jumps. Another danger is when he \"teleports\" into the sky like at 0:58. If you're too far, you won't know he's going to fall into you unless you recognise his scream, whereas if you keep him in range, you will notice him disappearing, allowing you to mentally prepare to dodge him from above. You probably noticed you can tell from which direction he's falling based on where the scream comes from (left, right, or right where you are). And in the case of his frantic swing, you need to find a middle ground: if you stand too close, the moment he raises his nail with its long reach, you may be hit even before you get to dodge it. But if you stand too far, he may have too much acceleration for you to have enough time to dodge it. As you can see at 1:16 in your video, he starts out slowly and quickly becomes very fast. But every time you go to the other side, he has to resume accelerating. In that kind of situation, what I did was very similar to you: jump, attack downward to bounce off of him, then land safely on the other side, and proceed to jump right away then repeat until he trips and fall. Okay I just took the time to try and fight him again, and here's what I noticed. When Zote is about to chase you with his nail, you can notice he needs a few moment before he starts moving; let's call it the acceleration period. Once he's done accelerating, he's charging towards you very fast, which makes it harder to dodge him if you don't see him coming. The trick here is: when you dodge him/jump over him and land on the other side, you can see he still has some momentum when he turns around to try and keep chasing you, a bit like a car doing a U-turn: it needs to stop before it can go the other way. Because of that, after jumping over him, you have 1 second to land and proceed to jump again to the other side, which is more than enough to safely avoid his charging (see the following video at 0:47): However, if possible, you need to avoid getting cornered on the sides of the map, because whenever he hits the wall, he brakes instantly, allowing him to resume charging the opposite direction right away, preventing this strategy from working: In this case, it's best to stick with what you found and keep bouncing off of him by slashing downward.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6321290135383606
+  },
+  {
+    "seed": 2024,
+    "text": "According to the Official Deep Rock Galactic Wiki : All resources held in the player's inventory when entering the drop will count towards minerals, minerals mined, gold mined etc. The only two exceptions to this are that Secondary objectives do not get completed when resources are not deposited. Large minerals (such as Jadiz or Enor) do not count if not deposited. Thus, the items you have to manually carry must be deposited into the mule to count.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.46321189403533936
+  },
+  {
+    "seed": 2024,
+    "text": "The new outfits do NOT effect game play and stats. They are just for show to make your characters look stylish.",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.34012722969055176
+  },
+  {
+    "seed": 2024,
+    "text": "What is this FPS game that is showcasing how bad the recoil is? Recently I bought a new HDD, so I was sorting which data to save. During that time, I found a video ( screenshot ) in my old HDD. At first, I thought it was my recordings to showcase how bad the recoil is, but I don't recall playing this game, nor does my friend know it. I am genuinely interested in why the recoil is so bad. In the video, the player character is shooting an LMG with very high recoil. There is a note in the top left of the screen saying, \"Your gun would be much more accurate if you deployed it! Go prone or find a sandbag to deploy!\" There's also a subtitle for a voice line: \"Squad, charge your weapons we're moving up!\" I suspect it was released in the early 2000s, given its graphics, but I'm not too sure. What is this game?",
+    "true_label": "help_request",
+    "predicted_label": "help_request",
+    "confidence": 0.6433408260345459
+  },
+  {
+    "seed": 2024,
+    "text": "I'm almost certain from back when I played Plants vs Zombies that magnet shroom will target the zombie closest to your house (notice how zombies are never spawned in the exact same position, so there will never be a tie).",
+    "true_label": "unsupported_claim",
+    "predicted_label": "unsupported_claim",
+    "confidence": 0.3516823947429657
+  },
+  {
+    "seed": 2024,
+    "text": "THIS IS HOW, in 1.21.11 WARNING: Do not operate this device near your enderman buddy, in the vicinity of lava, or above farmland. Unexpected Incidences\u2122 might occur. Use at your own risk! This is entirely my own creation, with only my initial tests being based off a simple flying machine of another's design. Thanks ( again ) to @NODO55 for encouraging me to look into my answer longer and upgrade its function :) Here is the newest version: This image shows every block, and every block is properly counted in the item hotbar. The same image, modified as a basic guide (with a fancy free-hand cube!): Like described in the earlier image, in order to start it you place (or modify in any way) a block in front of the specific observer pointed out in the image (the one in the back, facing to the side). You can not also make the machine go in reverse. It will not work backwards. Here is it starting off\u2026 \u2026and passing by: Be careful with the ice, digging one seems to convert all the others back to water, so have plenty of sponges or a good boat ready when building.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "guide_or_solution",
+    "confidence": 0.6785827279090881
+  },
+  {
+    "seed": 2024,
+    "text": "Basics of commands and arguments Minecraft's commands system allows players to modify the game in ways besides mining and placing blocks. Commands have different arguments that specify their behavior, such as a selected entity or specified location. For example, the very basic version of /summon has two arguments: An entity to summon A location to summon it at It is important to note that the term \u201centity\u201d does not only refer to mobs, such as creepers and blazes, but also to other objects that are not blocks, including item frames, paintings, snowballs, and dropped items. Knowing the /summon command's arguments, we can fill them in like so: Example Summon a wither skeleton at the position (0, 80, 0). summon minecraft:wither_skeleton 0 80 0 Relative and local coordinates This, however, is very limiting: what if we wanted to summon an entity at our current position? This is where relative cordinates come in. Relative coordinates are used by putting a ~ instead of a number. To summon a silverfish at my current location, you would do /summon minecraft:silverfish ~ ~ ~ . If you want to add an offset to the location of the relative coordinates, you can do so by typing numbers directly after the ~ . Example To summon a lightning bolt 1 block east, 2.3 blocks up, and 17.914 blocks north: summon minecraft:lightning_bolt ~1 ~2.3 ~-17.914 There are also local coordinates , which use carets ( ^ ^ ^ ). These work identically to relative coordinates, but any offset you use is offset based on the direction that the executing entity is looking. Example Summon a fireball one block in front of the executing entity's crosshairs: summon minecraft:fireball ^ ^ ^1 You cannot mix local coordinates with other types of coordinates. All three axes X, Y, and Z must either all use ^ or not . Target selectors Alongside positional coordinates, which select a position in the world to work with, there are also arguments which select an existing entity within the world to work with. These are named target selectors , but can be called entity selectors as an alternative name. The most basic entity selector is simply the @ sign followed directly by one of five letters. There are five options: @s selects the self (the entity executing the command) @p selects the closest player (to the executing position) @r selects a random player in the world @a selects all players in the world @e selects all entities in the world Target selectors also accept arguments , which are filters to further narrow the amount of entities selected. These range from selecting entities based on what type of entity they are, to filtering based on their location, or even based on their name, or the number of XP levels they have. Selectors are useful if you want to do anything to anyone besides named players: Analysis kill @e[type=minecraft:item] The command is /kill . /kill accepts a single argument, an entity selector that selects which entity to kill. The target selector is @e[type=minecraft:item] . The @e says to start with a list of all entities. Then, type=minecraft:item filters the list to only include item entities and nothing else. All entities that are within the list after filtering will be killed. Therefore: This command will kill all entities of type minecraft:item . This means that all dropped item entities will be killed. It is at this point that it should be noted that commands are case-sensitive. This means that you cannot put a capital letter where there should be lowercase, or vice versa. Many broken commands have been fixed by correcting a misplaced capital or lowercase letter, so make sure you are always very careful about what you are typing. Because there are so many different selector arguments, we won't be covering them all here. If you would like to see what's available, click the link above to view a full list on the Minecraft Wiki. That being said, we have a few important things to note: x= , y= , and z= are special arguments. They are different from the rest in that they are not actual filters, but they instead provide information to other filters. x= , y= , and z= define a position in the world where the other filters are calculated from. Analysis kill @a[x=1,y=2,z=3] The command is /kill . /kill accepts one argument, an entity or list of entities to remove. The target selector is @a[x=1,y=2,z=3] . The only filters present are x=1,y=2,z=3 , defining a position for other filters to be calculated from. But there are no other filters that will utilize this position. Therefore: The target selector @a[x=1,y=2,z=3] does not perform any filtering. This command will kill all players in the dimension that you run this command from. /execute command This is all very useful, but how would I go about summoning a lightning bolt onto every creeper in the loaded world? The /summon command has no entity selector, and I don't want to go around writing down the coordinates of every creeper that I can see. The solution is the /execute command, arguably the most important command in the game because it is able to change the 'metadata' behind a command: who's running it, where they are, which direction they are facing, among other things. The /execute command has several different specifiers we can attach to it to make it run commands in different ways. One of these is the at specifier, which allows us to choose which entities we want to run some command at. In this case, we would want to do /execute at @e[type=minecraft:creeper] run summon minecraft:lightning_bolt ~ ~ ~ . This would run the command \"summon a lightning bolt here\" from the position of all of the creepers. It is very important to remember who is executing a command and where is the command being executed from. An example of the problems that happen when you forget this is the command /execute at @e[type=creeper] run kill @s . At first glance, this may seem like it will kill all creepers loaded in the world, but it won't. It will kill the entity who runs the command (assuming at least one creeper exists in the world), because @s refers to the self (kill self) and no matter where the command is executed (even if it is at the position of all creepers) @s still refers to whoever is running the command. A fix might appear to be /execute positioned as @e[type=creeper] run kill @s , but this has the same problem: the executing entity is still the entity who runs the command. To fix this, one would run /execute as @e[type=creeper] run kill @s . Now, @s refers to @e[type=creeper] . Of course, one could just do /kill @e[type=creeper] , but this is just an example problem. Item components This is all very well and good, but what if we want to do something more complicated, such as give a random player an unbreakable golden sword with Fire Aspect II which has the bolded, non-italic, dark-red name \"Flame Boi\" and eats non-gamers? This is where components come in. Components essentially allow you to set certain attributes of items beyond just their location. These consist of tags which have a name and a value . Sometimes, a tag may have multiple or nested values, in which case a list [] (series of values) or compound {} (tags within a tag) will be required. Components can support many other things, but right now we will just use the ones required for the sword. To give the sword, we would use /give @r golden_sword[enchantments={fire_aspect:2},unbreakable={},item_name={text:\"Flame Boi\",color:dark_red,italic:false,bold:true},lore=[\"This sword eats non-gamers.\"]] 1 To break it down, enchantments={...} is a list of enchantments, each of which has a key (the name of the enchantment) and a value (the level of the enchantment) The golden sword has the unbreakable component (the value doesn't matter but needs to be an object), so it lasts long enough to actually kill something. The item_name component specifies the name of the item in the inventory (another object specifying the item components) Finally, lore=[...] is a list of lines of lore to display. Each can be a string, or it can be an object using the same formatted text format as the item name. Additional component tips A very helpful command for learning about item components is /data get entity @s SelectedItem . It tells you all of the components that the item that you're currently holding has. That includes custom names, colors, enchantments, etc. To use it you can craft, find, or /give yourself the item that you want to use, rename and enchant it with an anvil and then hold it. Run /data get entity @s SelectedItem to get all of the components that the item has that you may need to /give yourself an identical item. When using /setblock or /summon rather than /give the syntax used is called NBT (Named Binary Tags) rather than components, and it works in a slightly different way but the same basic concepts still apply. A helpful keyboard shortcut is F3 + I , it will copy a /setblock or /summon command into your clipboard that you can use to set a block, or summon an entity that will be identical to the one you're looking at, including all NBT and block states. You can copy that command into a text editor with Ctrl + C to learn a lot about NBT. If you want a /summon command for a horse with blue leather armor, you can find or /summon a horse, give it blue leather armor, then look at it, press F3 + I and copy the command into a command block, no changes required. You won't need all of the NBT tags in most cases, you can make the command shorter by removing excess NBT tags. Make sure to test the command a few times in the process to make sure you didn't break anything. The keyboard shortcuts provided here are for Windows users, they may be different for mac, linux, or other systems Conclusion If you've read through this and still have a question on how a command works or where to put an NBT tag, item component, or something similar, be sure to read the wiki about that command, or this website which has the data types in NBT, this website which lists the item components in Minecraft, this website which contains information on player NBT, or this website which has information on chunk NBT. NBT and components use syntax very similar to JSON, so several links which may help explain JSON are this , this , this , this , and this . Don't worry if you don't have any programming knowledge/experience or if it is too technical for you: JSON is related to NBT and components in structure but you don't need to know about server-client data interchange or anything like that to use them. This is a good JSON validator, however be wary : JSON and NBT/components are not the same, so valid nbt may be flagged as incorrect JSON because the String identifiers are not enclosed with quotation marks. It's better to figure out why something is broken by hand (tracing braces/brackets, retyping it, checking capitalization...) than be misled by a JSON checker which operates by slightly different rules than NBT. See also How can I fix \"unbalanced brackets\" in my data tag? However, /tellraw and /title use strict JSON (which can be found here ) so the above tool is very useful for helping create those types of commands. If you have read through this guide and are ready to ask a question about minecraft-commands , make sure to read this guide which gives some pointers on how to ask your question.",
+    "true_label": "guide_or_solution",
+    "predicted_label": "supported_claim",
+    "confidence": 0.40650489926338196
+  }
+]
