@@ -1,0 +1,41 @@
+{
+  "dataset_sha256": "1aab1256c3e5bb0ddcbc76ba25f880d0a328c53cd0ab68cc1d52f4307048d307",
+  "tokenizer": "distilbert-base-uncased",
+  "includes_special_tokens": true,
+  "total_posts": 270,
+  "label_counts": {
+    "help_request": 55,
+    "supported_claim": 55,
+    "guide_or_solution": 105,
+    "unsupported_claim": 55
+  },
+  "exceeding_limit": {
+    "128": {
+      "total": 145,
+      "per_label": {
+        "guide_or_solution": 77,
+        "help_request": 28,
+        "supported_claim": 40,
+        "unsupported_claim": 0
+      }
+    },
+    "256": {
+      "total": 82,
+      "per_label": {
+        "guide_or_solution": 50,
+        "help_request": 12,
+        "supported_claim": 20,
+        "unsupported_claim": 0
+      }
+    },
+    "512": {
+      "total": 28,
+      "per_label": {
+        "guide_or_solution": 17,
+        "help_request": 1,
+        "supported_claim": 10,
+        "unsupported_claim": 0
+      }
+    }
+  }
+}
