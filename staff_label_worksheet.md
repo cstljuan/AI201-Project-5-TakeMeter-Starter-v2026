@@ -241,4 +241,3 @@ Signed up. Card's charged, no going back, immediately regret everything.
 **AI-suggested label:** `reaction`
 
 **Reason:** Reports the writer’s immediate reaction to signing up.
-
